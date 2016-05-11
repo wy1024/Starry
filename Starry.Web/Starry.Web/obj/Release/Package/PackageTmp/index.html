@@ -1,0 +1,21 @@
+﻿<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body ng-app="Starry">
+
+    <div class="container" ng-view>
+
+    </div>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Client/Starry/app.module.js"></script>
+    <script src="Client/Starry/app.route.js"></script>
+    <script src="Client/Starry/services/starryservice.js"></script>
+    <script src="Client/Starry/controllers/search.js"></script>
+    <script src="Client/Starry/controllers/user.js"></script>
+    <a href="https://api.weibo.com/oauth2/authorize?client_id=2647399538&redirect_uri=http://starryweb.azurewebsites.net/user.html&response_type=code 
+">Connect to your weibo</a>
+</body>
+</html>
