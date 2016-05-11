@@ -1,0 +1,8 @@
+C:\Users\wangjaso\Source\Starry\Starry.Runner\bin\Debug\Starry.Runner.exe.config
+C:\Users\wangjaso\Source\Starry\Starry.Runner\bin\Debug\Starry.Runner.exe
+C:\Users\wangjaso\Source\Starry\Starry.Runner\bin\Debug\Starry.Runner.pdb
+C:\Users\wangjaso\Source\Starry\Starry.Runner\bin\Debug\Starry.Library.dll
+C:\Users\wangjaso\Source\Starry\Starry.Runner\bin\Debug\Starry.Library.pdb
+C:\Users\wangjaso\Source\Starry\Starry.Runner\obj\Debug\Starry.Runner.csprojResolveAssemblyReference.cache
+C:\Users\wangjaso\Source\Starry\Starry.Runner\obj\Debug\Starry.Runner.exe
+C:\Users\wangjaso\Source\Starry\Starry.Runner\obj\Debug\Starry.Runner.pdb

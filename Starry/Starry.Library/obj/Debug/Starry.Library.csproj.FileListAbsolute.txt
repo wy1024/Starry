@@ -1,0 +1,9 @@
+C:\Users\wangjaso\Source\Starry\Starry.Library\bin\Debug\Starry.Library.dll
+C:\Users\wangjaso\Source\Starry\Starry.Library\bin\Debug\Starry.Library.pdb
+C:\Users\wangjaso\Source\Starry\Starry.Library\obj\Debug\Starry.Library.csprojResolveAssemblyReference.cache
+C:\Users\wangjaso\Source\Starry\Starry.Library\obj\Debug\Starry.Library.dll
+C:\Users\wangjaso\Source\Starry\Starry.Library\obj\Debug\Starry.Library.pdb
+C:\Users\wangjaso\Source\Starry\Starry.Library\bin\Debug\Newtonsoft.Json.dll
+C:\Users\wangjaso\Source\Starry\Starry.Library\bin\Debug\NetDimension.OpenAuth.pdb
+C:\Users\wangjaso\Source\Starry\Starry.Library\bin\Debug\NetDimension.OpenAuth.Sina.pdb
+C:\Users\wangjaso\Source\Starry\Starry.Library\bin\Debug\Newtonsoft.Json.xml
