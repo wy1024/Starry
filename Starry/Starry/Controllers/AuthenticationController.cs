@@ -1,5 +1,4 @@
-﻿using NetDimension.OpenAuth.Sina;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -15,6 +14,8 @@ using System.Web.Http.WebHost;
 using System.Web.SessionState;
 using System.Web.Routing;
 using System.Web.Http.Cors;
+using Starry.Library.WeiboUtil;
+using System.Collections.Specialized;
 
 namespace Starry.Controllers
 {
@@ -22,102 +23,72 @@ namespace Starry.Controllers
     public class AuthenticationController : ApiController
     {
         SinaWeiboClient client;
+        NameValueCollection settings;
 
         public AuthenticationController()
         {
-            client = GetOpenAuthClient();
+            settings = ConfigurationManager.AppSettings;
         }
 
-        /// <summary>
-        /// 封装一个方法来初始化OpenAuth客户端
-        /// </summary>
-        /// <returns></returns>
-        private SinaWeiboClient GetOpenAuthClient()
+        private void CreateClientFromCode(string code)
         {
-
-            string accessToken;
-            string uid;
-            //if(Session != null)
-            //{
-            //    accessToken = Session["access_token"] == null ? string.Empty : (string)Session["access_token"];
-            //    uid = Session["uid"] == null ? string.Empty : (string)Session["uid"];
-            //}
-            //else
-            //{
-                accessToken = string.Empty;
-                uid = string.Empty;
-            //}
-
-
-            var settings = ConfigurationManager.AppSettings;
-            var client = new SinaWeiboClient(settings["appKey"], settings["appSecret"], settings["callbackUrl"], accessToken, uid);
-
-            return client;
-        }
-
-        /// <summary>
-        /// 授权认证
-        /// </summary>
-        /// <param name="code">新浪返回的code</param>
-        /// <returns></returns>
-        public bool Authorized(string code)
-        {
-            //if (string.IsNullOrEmpty(code))
-            //{
-            //    return RedirectToAction("Index");
-            //}
-
-
-            //var client = GetOpenAuthClient();
-
+            string accessToken = string.Empty;
+            string uid = string.Empty;
+            client = new SinaWeiboClient(settings["appKey"], settings["appSecret"], settings["callbackUrl"], accessToken, uid);
             client.GetAccessTokenByCode(code);
-            
+        }
 
-            //if (client.IsAuthorized)
-            //{
-            //    //用session记录access token
-            //    Session["access_token"] = client.AccessToken;
-            //    //用cookie记录uid
-            //    Session["uid"] = client.UID;
-            //}
-            return client.IsAuthorized;
-
+        private void CreateClientFromAccessToken(string access_token)
+        {
+            string uid = string.Empty;
+            client = new SinaWeiboClient(settings["appKey"], settings["appSecret"], settings["callbackUrl"], access_token, uid);
         }
 
         [Route("api/Register/{code}")]
         // GET: api/Authentication/5
-        public string GetAccessCode(string code)
+        public string Register(string code)
         {
             // POST Call
-            bool isAuthorized = Authorized(code);
-            //var app = new ClientApp(code);
-            //bool gotAccess = app.GetAccess();
-
-            var response = client.HttpGet("statuses/friends_timeline.json");
-            //var response = client.HttpGet("statuses/mentions.json");
-            var result = response.Content.ReadAsStringAsync().Result;
-            return result;
-
-            //return isAuthorized.ToString();
+            CreateClientFromCode(code);
+            string access_token = client.AccessToken;
+            return access_token;
         }
         
 
-        [Route("api/GetPublicTimeline")]
-        public string GetPublicTimeline()
+        [Route("api/GetPublicTimeline/{access_token}")]
+        public string GetPublicTimeline(string access_token)
         {
-            var client = GetOpenAuthClient();
-
-            if (!client.IsAuthorized)
-            {
-                return "Not authorized";
-            }
-            // 调用获取当前登录用户及其所关注用户的最新微博api
-            // 参考：http://open.weibo.com/wiki/2/statuses/friends_timeline
+            CreateClientFromAccessToken(access_token);
             var response = client.HttpGet("statuses/friends_timeline.json");
             var result = response.Content.ReadAsStringAsync().Result;
             return result;
+        }
 
+        [Route("api/GetActiveFollowers/{access_token}")]
+        public string GetActiveFollowers(string access_token)
+        {
+            CreateClientFromAccessToken(access_token);
+            var response = client.HttpGet("friendships/followers/active.json");
+            var result = response.Content.ReadAsStringAsync().Result;
+            return result;
+        }
 
+        [Route("api/GetBilateralFriends/{access_token}")]
+        public string GetBilateralFriends(string access_token)
+        {
+            CreateClientFromAccessToken(access_token);
+            var response = client.HttpGet("users/show.json");
+            var result = response.Content.ReadAsStringAsync().Result;
+            return result;
+        }
+
+        [Route("api/GetUserInfo/{access_token}")]
+        public string GetUserInfo(string access_token)
+        {
+            CreateClientFromAccessToken(access_token);
+            var response = client.HttpGet("users/show.json");
+            var result = response.Content.ReadAsStringAsync().Result;
+            return result;
         }
     }
 }

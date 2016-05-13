@@ -8,29 +8,62 @@ module Starry {
 
     interface UserScope extends ng.IScope {
         code: any;
-        data: any;
+        access_code: any;
+
+        friends: any;
+        followers: any;
+
+        userInfo: any;
+
+        posts: any;
+        comments: any;
+
+
         loaded: any;
+
+        //message: any;
     }
 
     export class UserController {
-        static $inject = ['$scope', '$http'];
+        static $inject = ['$scope', '$http', 'ngStorage', '$q'];
 
-        constructor(public scope: UserScope, $http: ng.IHttpService) {
+        constructor(public scope: UserScope, $http: ng.IHttpService, $q:any) {
             //var userId = $routeParams.code;
             var self = this;
-            var code = this.getUrlParameter('code');
+            var code = this.GetUrlParameter('code');
             this.scope.code = "code is " + code;
             this.scope.loaded = false;
 
             var url = "http://starrywebapi.azurewebsites.net/api/Register/" + code;
-            var getPriorities = $http.get(url)
+            var register = $http.get(url)
                 .then(function (res) {
-                    self.scope.data = res.data;
+                    self.scope.access_code = res.data;
+                    self.scope.loaded = true;
+                });
+
+            //if (localStorage.message == null) {
+            //    localStorage.message = this.scope.data;
+            //    scope.message = localStorage.message;
+            //}
+
+            $q.all([register]).then(function () {
+                self.GetKeyMetrics(this.$http);
+            });
+
+        }
+
+        GetKeyMetrics($http: ng.IHttpService) {
+            var self = this;
+            var access_code = this.scope.access_code;
+            var friends_url = "http://starrywebapi.azurewebsites.net/api/GetFollowers/" + access_code;
+            var register = $http.get(friends_url)
+                .then(function (res) {
+                    self.scope.access_code = res.data;
                     self.scope.loaded = true;
                 });
         }
 
-        getUrlParameter(sParam) {
+        GetUrlParameter(sParam) {
             var sPageURL = decodeURIComponent(window.location.search.substring(1)),
                 sURLVariables = sPageURL.split('&'),
                 sParameterName,

@@ -30,14 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NetDimension.OpenAuth, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\NetDimension.OpenAuth.dll</HintPath>
-    </Reference>
-    <Reference Include="NetDimension.OpenAuth.Sina, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\NetDimension.OpenAuth.Sina.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -56,6 +48,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="util\HttpClient.cs" />
     <Compile Include="util\RestClient.cs" />
+    <Compile Include="WeiboUtil\MemoryFileContent.cs" />
+    <Compile Include="WeiboUtil\OpenAuthenticationClientBase.cs" />
+    <Compile Include="WeiboUtil\SinaWeiboClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
