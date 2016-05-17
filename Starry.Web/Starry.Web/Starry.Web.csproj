@@ -22,18 +22,25 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="chart.html" />
+    <Content Include="css\angular-chart.css" />
+    <Content Include="css\angular-chart.min.css" />
     <Content Include="css\site.css" />
+    <Content Include="Scripts\angular-chart.js" />
+    <Content Include="Scripts\angular-chart.min.js" />
+    <Content Include="Scripts\chart.js" />
     <Content Include="Scripts\ngStorage.js" />
     <Content Include="Scripts\ngStorage.min.js" />
     <Content Include="user.html" />
     <Content Include="index.html" />
-    <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <None Include="ftp.pubxml" />
     <None Include="local.pubxml" />
+    <Content Include="Scripts\angular-chart.min.css.map" />
+    <Content Include="Scripts\angular-chart.min.js.map" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
@@ -41,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Client\Starry\app.module.ts" />
+    <TypeScriptCompile Include="Client\Starry\controllers\chart.ts" />
     <TypeScriptCompile Include="Client\Starry\controllers\search.ts" />
     <TypeScriptCompile Include="Client\Starry\controllers\user.ts" />
     <TypeScriptCompile Include="Client\Starry\services\starryservice.ts" />

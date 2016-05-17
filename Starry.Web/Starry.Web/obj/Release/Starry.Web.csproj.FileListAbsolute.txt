@@ -4,3 +4,9 @@ C:\Users\wangjaso\Source\Starry.Web\Starry.Web\bin\Starry.Web.pdb
 C:\Users\wangjaso\Source\Starry.Web\Starry.Web\obj\Release\Starry.Web.csprojResolveAssemblyReference.cache
 C:\Users\wangjaso\Source\Starry.Web\Starry.Web\obj\Release\Starry.Web.dll
 C:\Users\wangjaso\Source\Starry.Web\Starry.Web\obj\Release\Starry.Web.pdb
+C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\bin\Starry.Web.dll.config
+C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\bin\Starry.Web.dll
+C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\bin\Starry.Web.pdb
+C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\obj\Release\Starry.Web.csprojResolveAssemblyReference.cache
+C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\obj\Release\Starry.Web.dll
+C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\obj\Release\Starry.Web.pdb

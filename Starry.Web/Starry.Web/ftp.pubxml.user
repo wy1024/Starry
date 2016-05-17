@@ -11,22 +11,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Starry.Web.dll">
-      <publishTime>05/09/2016 23:35:04</publishTime>
+      <publishTime>05/14/2016 00:27:03</publishTime>
     </File>
     <File Include="Client/Starry/app.module.js">
-      <publishTime>05/10/2016 00:56:44</publishTime>
+      <publishTime>05/14/2016 00:11:04</publishTime>
     </File>
     <File Include="Client/Starry/app.route.js">
       <publishTime>05/10/2016 00:56:44</publishTime>
     </File>
     <File Include="Client/Starry/controllers/search.js">
-      <publishTime>05/10/2016 00:56:44</publishTime>
+      <publishTime>05/14/2016 00:11:04</publishTime>
     </File>
     <File Include="Client/Starry/controllers/user.js">
-      <publishTime>05/10/2016 00:56:44</publishTime>
+      <publishTime>05/14/2016 00:11:04</publishTime>
     </File>
     <File Include="Client/Starry/services/starryservice.js">
-      <publishTime>05/10/2016 00:56:44</publishTime>
+      <publishTime>05/14/2016 00:11:04</publishTime>
     </File>
     <File Include="Client/Starry/views/_search.html">
       <publishTime>05/08/2016 16:40:37</publishTime>
@@ -38,46 +38,52 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>05/08/2016 16:50:29</publishTime>
     </File>
     <File Include="index.html">
-      <publishTime>05/08/2016 22:14:14</publishTime>
+      <publishTime>05/11/2016 17:48:10</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>05/08/2016 16:28:15</publishTime>
+      <publishTime>05/11/2016 18:27:01</publishTime>
     </File>
     <File Include="Scripts/angular-mocks.js">
       <publishTime>05/08/2016 16:27:59</publishTime>
     </File>
     <File Include="Scripts/angular-route.js">
-      <publishTime>05/08/2016 16:28:08</publishTime>
+      <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
     <File Include="Scripts/angular-route.min.js">
-      <publishTime>05/08/2016 16:28:08</publishTime>
+      <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
     <File Include="Scripts/angular-route.min.js.map">
-      <publishTime>05/08/2016 16:28:08</publishTime>
+      <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
     <File Include="Scripts/angular.js">
-      <publishTime>05/08/2016 16:27:59</publishTime>
+      <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
     <File Include="Scripts/angular.min.js">
-      <publishTime>05/08/2016 16:27:59</publishTime>
+      <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
     <File Include="Scripts/angular.min.js.map">
-      <publishTime>05/08/2016 16:27:59</publishTime>
+      <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
     <File Include="Scripts/jquery-2.2.3.js">
-      <publishTime>05/08/2016 16:28:15</publishTime>
+      <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
     <File Include="Scripts/jquery-2.2.3.min.js">
-      <publishTime>05/08/2016 16:28:15</publishTime>
+      <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
     <File Include="Scripts/jquery-2.2.3.min.map">
-      <publishTime>05/08/2016 16:28:15</publishTime>
+      <publishTime>05/10/2016 22:24:29</publishTime>
+    </File>
+    <File Include="Scripts/ngStorage.js">
+      <publishTime>05/11/2016 18:24:04</publishTime>
+    </File>
+    <File Include="Scripts/ngStorage.min.js">
+      <publishTime>05/11/2016 18:23:56</publishTime>
     </File>
     <File Include="user.html">
-      <publishTime>05/10/2016 00:56:40</publishTime>
+      <publishTime>05/11/2016 18:34:54</publishTime>
     </File>
     <File Include="web.config">
-      <publishTime>05/08/2016 21:44:22</publishTime>
+      <publishTime>05/14/2016 00:12:48</publishTime>
     </File>
   </ItemGroup>
 </Project>
