@@ -10,4 +10,4 @@ var Starry;
         .module("Starry")
         .controller("SearchController", SearchController);
 })(Starry || (Starry = {}));
-//# sourceMappingURL=search.js.map
+//# sourceMappingURL=index.js.map

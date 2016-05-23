@@ -4,5 +4,5 @@ module Starry {
     "use strict";
 
     angular
-        .module("Starry", ["ngRoute"]);
+        .module("Starry", []);
 }

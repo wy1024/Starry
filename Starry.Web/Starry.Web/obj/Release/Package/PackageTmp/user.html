@@ -1,26 +1,42 @@
 ﻿<html>
 <head>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="css/angular-chart.css" rel="stylesheet" />
     <link href="css/site.css" rel="stylesheet" />
+    <!-- Scripts -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Client/Starry/app.module.js"></script>
+
+    <script src="Scripts/chart.js"></script>
+    <script src="Scripts/angular-chart.js"></script>
+    
+    <script src="Client/Starry/controllers/user.js"></script>
 </head>
 <body ng-app="Starry" ng-controller="UserController">
 
+
     <div class="container" ng-view>
+        <p ng-show="!loaded">Loading...</p>
+        <p ng-show="loaded">{{data}}</p>
+        <p ng-show="loaded">{{user_id}}</p>
 
+        <div class=".col-lg-4">My Followers</div>
+
+
+        <div class=".col-lg-4">My Posts</div>
+        <div class="row">
+            <div class=".col-lg-4 chart">
+                <canvas id="line" width="40" height="40" class="chart chart-line" chart-data="chartData"
+                chart-labels="labels" chart-legend="true" chart-series="series"
+                chart-click="onClick" chart-options="chartOptions"></canvas>
+            </div>
+            <div class=".col-lg-4 chart">
+                <canvas id="line2" width="40" height="40" class="chart chart-line" chart-data="chartData"
+                chart-labels="labels" chart-legend="true" chart-series="series"
+                chart-click="onClick"></canvas>
+            </div>
+        </div>
     </div>
-    <script src="Scripts/angular.js"></script>
-    <script src="Scripts/angular-route.js"></script>
-    <script src="Client/Starry/app.module.js"></script>
-    <script src="Client/Starry/services/starryservice.js"></script>
-    <script src="Client/Starry/controllers/search.js"></script>
-    <script src="Client/Starry/controllers/user.js"></script>
-    <script src="Scripts/ngStorage.js"></script>
-
-    <p>user page!!!</p>
-
-    <p>{{code}}</p>
-    <p ng-show="!loaded">Loading...</p>
-    <p ng-show="loaded">{{data}}</p>
-
 </body>
 </html>

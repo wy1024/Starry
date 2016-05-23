@@ -6,6 +6,6 @@ C:\Users\wangjaso\Source\Starry.Web\Starry.Web\obj\Debug\Starry.Web.pdb
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\bin\Starry.Web.dll.config
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\bin\Starry.Web.dll
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\bin\Starry.Web.pdb
+C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\obj\Debug\Starry.Web.csprojResolveAssemblyReference.cache
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\obj\Debug\Starry.Web.dll
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\obj\Debug\Starry.Web.pdb
-C:\Users\jasonwang\Documents\Source\repo\Starry\Starry.Web\Starry.Web\obj\Debug\Starry.Web.csprojResolveAssemblyReference.cache

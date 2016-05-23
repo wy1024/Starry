@@ -46,3 +46,16 @@ tr:nth-child(even){
 tr td {
     padding:10px;
 }
+
+.container {
+    border : 1px solid black;
+    margin-top: 20px;
+    position: relative;
+    padding: 30px;
+}
+
+.chart {
+     width: 50%;
+     margin: 0px;
+     float:left;
+}

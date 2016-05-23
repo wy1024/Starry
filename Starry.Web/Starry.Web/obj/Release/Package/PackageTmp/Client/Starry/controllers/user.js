@@ -9,39 +9,41 @@ var Starry;
             var code = this.GetUrlParameter('code');
             this.scope.code = "code is " + code;
             this.scope.loaded = false;
-            var register = this.RegisterUser($http, code);
-            //if (localStorage.message == null) {
-            //    localStorage.message = this.scope.data;
-            //    scope.message = localStorage.message;
-            //}
-            $q.all([register]).then(function () {
-                self.GetKeyMetrics(this.$http);
-            });
-        }
-        UserController.prototype.RegisterUser = function ($http, code) {
-            var self = this;
             var url = "http://starrywebapi.azurewebsites.net/api/Register/" + code;
             var register = $http.get(url)
-                .then(function (res) {
-                // Hack TODO remove substring
-                self.scope.access_code = String(res.data).substring(2);
+                .then(function (result) {
+                result = String(result.data).substring(2);
                 ;
-                //self.scope.loaded = true;
-                // Get UserId
+                self.scope.access_code = result;
                 url = "http://starrywebapi.azurewebsites.net/api/GetUserId/" + self.scope.access_code;
-                $http.get(url)
-                    .then(function (res) {
-                    self.scope.user_id = res.data;
+                return $http.get(url)
+                    .then(function (result) {
+                    self.scope.user_id = JSON.parse(String(result.data))["uid"];
                 });
             });
-        };
+            $q.all([register]).then(function () {
+                self.GetKeyMetrics($http);
+            });
+            // Chart stuff
+            this.scope.labels = ["January", "February", "March", "April", "May", "June", "July"];
+            this.scope.series = ['Series A', 'Series B'];
+            this.scope.chartData = [
+                [65, 59, 80, 81, 56, 55, 40],
+                [28, 48, 40, 19, 86, 27, 90]
+            ];
+            this.scope.chartOptions = {};
+            this.scope.onClick = function (points, evt) {
+                console.log(points, evt);
+            };
+        }
         UserController.prototype.GetKeyMetrics = function ($http) {
             var self = this;
             var access_code = this.scope.access_code;
-            var friends_url = "http://starrywebapi.azurewebsites.net/api/GetFollowers/" + access_code;
-            var register = $http.get(friends_url)
+            var user_id = this.scope.user_id;
+            var timelineUrl = "http://starrywebapi.azurewebsites.net/api/GetPublicTimeline/" + access_code;
+            var register = $http.get(timelineUrl)
                 .then(function (res) {
-                self.scope.access_code = res.data;
+                self.scope.data = res.data;
                 self.scope.loaded = true;
             });
         };
@@ -55,12 +57,12 @@ var Starry;
             }
         };
         ;
-        UserController.$inject = ['$scope', '$http', 'ngStorage', '$q'];
+        UserController.$inject = ['$scope', '$http', '$q'];
         return UserController;
     })();
     Starry.UserController = UserController;
     angular
-        .module("Starry")
+        .module("Starry", ["chart.js"])
         .controller("UserController", UserController);
 })(Starry || (Starry = {}));
 //# sourceMappingURL=user.js.map

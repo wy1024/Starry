@@ -3,6 +3,6 @@ var Starry;
 (function (Starry) {
     "use strict";
     angular
-        .module("Starry", ["ngRoute"]);
+        .module("Starry", []);
 })(Starry || (Starry = {}));
 //# sourceMappingURL=app.module.js.map

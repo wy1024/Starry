@@ -11,22 +11,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Starry.Web.dll">
-      <publishTime>05/14/2016 00:27:03</publishTime>
+      <publishTime>05/19/2016 20:38:31</publishTime>
+    </File>
+    <File Include="chart.html">
+      <publishTime>05/16/2016 22:04:58</publishTime>
     </File>
     <File Include="Client/Starry/app.module.js">
-      <publishTime>05/14/2016 00:11:04</publishTime>
+      <publishTime>05/18/2016 23:56:48</publishTime>
     </File>
     <File Include="Client/Starry/app.route.js">
       <publishTime>05/10/2016 00:56:44</publishTime>
+    </File>
+    <File Include="Client/Starry/controllers/chart.js">
+      <publishTime>05/18/2016 23:56:48</publishTime>
+    </File>
+    <File Include="Client/Starry/controllers/index.js">
+      <publishTime>05/18/2016 23:56:48</publishTime>
     </File>
     <File Include="Client/Starry/controllers/search.js">
       <publishTime>05/14/2016 00:11:04</publishTime>
     </File>
     <File Include="Client/Starry/controllers/user.js">
-      <publishTime>05/14/2016 00:11:04</publishTime>
+      <publishTime>05/18/2016 23:56:48</publishTime>
     </File>
     <File Include="Client/Starry/services/starryservice.js">
-      <publishTime>05/14/2016 00:11:04</publishTime>
+      <publishTime>05/18/2016 23:56:48</publishTime>
     </File>
     <File Include="Client/Starry/views/_search.html">
       <publishTime>05/08/2016 16:40:37</publishTime>
@@ -34,14 +43,305 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Client/Starry/views/_user.html">
       <publishTime>05/09/2016 23:31:44</publishTime>
     </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="css/angular-chart.css">
+      <publishTime>04/22/2016 23:25:59</publishTime>
+    </File>
+    <File Include="css/angular-chart.min.css">
+      <publishTime>04/22/2016 23:26:05</publishTime>
+    </File>
+    <File Include="css/animate.css">
+      <publishTime>09/24/2014 11:51:32</publishTime>
+    </File>
+    <File Include="css/bootstrap-theme.min.css">
+      <publishTime>11/12/2014 08:03:24</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>11/12/2014 08:03:24</publishTime>
+    </File>
+    <File Include="css/font-awesome.css">
+      <publishTime>08/26/2014 11:46:50</publishTime>
+    </File>
+    <File Include="css/fonts.css">
+      <publishTime>01/01/2010 00:14:44</publishTime>
+    </File>
+    <File Include="css/fresco/fresco.css">
+      <publishTime>12/06/2014 17:26:30</publishTime>
+    </File>
+    <File Include="css/fresco/skins/blank.gif">
+      <publishTime>12/06/2014 17:26:30</publishTime>
+    </File>
+    <File Include="css/fresco/skins/fresco/sprite%40x2.png">
+      <publishTime>12/06/2014 17:26:30</publishTime>
+    </File>
+    <File Include="css/fresco/skins/fresco/sprite.png">
+      <publishTime>12/06/2014 17:26:30</publishTime>
+    </File>
+    <File Include="css/fresco/skins/IE6/sprite.png">
+      <publishTime>12/06/2014 17:26:30</publishTime>
+    </File>
+    <File Include="css/fresco/skins/loading-medium.gif">
+      <publishTime>12/06/2014 17:26:30</publishTime>
+    </File>
+    <File Include="css/fresco/skins/loading-small.gif">
+      <publishTime>12/06/2014 17:26:30</publishTime>
+    </File>
+    <File Include="css/fresco/skins/loading.gif">
+      <publishTime>12/06/2014 17:26:30</publishTime>
+    </File>
+    <File Include="css/layout.css">
+      <publishTime>01/01/2010 01:02:38</publishTime>
+    </File>
+    <File Include="css/normalize.css">
+      <publishTime>05/10/2013 16:39:28</publishTime>
+    </File>
+    <File Include="css/portfolio.css">
+      <publishTime>02/02/2015 17:45:58</publishTime>
+    </File>
     <File Include="css/site.css">
-      <publishTime>05/08/2016 16:50:29</publishTime>
+      <publishTime>05/17/2016 21:46:12</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>01/01/2010 01:51:24</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.eot">
+      <publishTime>08/26/2014 11:46:50</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.svg">
+      <publishTime>08/26/2014 11:46:50</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.ttf">
+      <publishTime>08/26/2014 11:46:50</publishTime>
+    </File>
+    <File Include="fonts/fontawesome-webfont.woff">
+      <publishTime>08/26/2014 11:46:50</publishTime>
+    </File>
+    <File Include="fonts/FontAwesome.otf">
+      <publishTime>08/26/2014 11:46:50</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/11/2014 14:41:18</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/11/2014 14:41:18</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/11/2014 14:41:18</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/11/2014 14:41:18</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="fonts/opensans-regular-webfont.eot">
+      <publishTime>01/07/2015 15:37:34</publishTime>
+    </File>
+    <File Include="fonts/opensans-regular-webfont.svg">
+      <publishTime>01/07/2015 15:37:34</publishTime>
+    </File>
+    <File Include="fonts/opensans-regular-webfont.ttf">
+      <publishTime>01/07/2015 15:37:34</publishTime>
+    </File>
+    <File Include="fonts/opensans-regular-webfont.woff">
+      <publishTime>01/07/2015 15:37:34</publishTime>
+    </File>
+    <File Include="fonts/roboto-bold-webfont.eot">
+      <publishTime>01/07/2015 15:37:34</publishTime>
+    </File>
+    <File Include="fonts/roboto-bold-webfont.svg">
+      <publishTime>01/07/2015 15:37:34</publishTime>
+    </File>
+    <File Include="fonts/roboto-bold-webfont.ttf">
+      <publishTime>01/07/2015 15:37:34</publishTime>
+    </File>
+    <File Include="fonts/roboto-bold-webfont.woff">
+      <publishTime>01/07/2015 15:37:34</publishTime>
+    </File>
+    <File Include="images/bestibulum.jpg">
+      <publishTime>01/01/2010 00:33:00</publishTime>
+    </File>
+    <File Include="images/clients.jpg">
+      <publishTime>01/01/2010 00:13:04</publishTime>
+    </File>
+    <File Include="images/clients1.jpg">
+      <publishTime>02/01/2015 19:40:24</publishTime>
+    </File>
+    <File Include="images/clients2.jpg">
+      <publishTime>01/01/2010 00:20:08</publishTime>
+    </File>
+    <File Include="images/fav.png">
+      <publishTime>02/11/2016 20:06:58</publishTime>
+    </File>
+    <File Include="images/font-awesome-1.png">
+      <publishTime>01/31/2015 15:10:52</publishTime>
+    </File>
+    <File Include="images/font-awesome-2.png">
+      <publishTime>01/31/2015 15:12:06</publishTime>
+    </File>
+    <File Include="images/font-awesome-3.png">
+      <publishTime>01/31/2015 15:12:52</publishTime>
+    </File>
+    <File Include="images/go.png">
+      <publishTime>01/01/2010 00:46:38</publishTime>
+    </File>
+    <File Include="images/header/gellary/header-1.jpg">
+      <publishTime>02/03/2015 11:51:52</publishTime>
+    </File>
+    <File Include="images/header/gellary/header-2.jpg">
+      <publishTime>02/10/2016 20:52:20</publishTime>
+    </File>
+    <File Include="images/header/gellary/header-3.jpg">
+      <publishTime>02/03/2015 11:52:20</publishTime>
+    </File>
+    <File Include="images/header/gellary/header-4.jpg">
+      <publishTime>02/10/2016 20:54:30</publishTime>
+    </File>
+    <File Include="images/header/header-1.jpg">
+      <publishTime>05/19/2016 00:31:11</publishTime>
+    </File>
+    <File Include="images/header/header-2.jpg">
+      <publishTime>05/19/2016 00:36:07</publishTime>
+    </File>
+    <File Include="images/header/header-3.jpg">
+      <publishTime>05/19/2016 00:37:42</publishTime>
+    </File>
+    <File Include="images/header/header-4.jpg">
+      <publishTime>05/19/2016 00:33:47</publishTime>
+    </File>
+    <File Include="images/hire.jpg">
+      <publishTime>01/29/2015 17:29:24</publishTime>
+    </File>
+    <File Include="images/main-header.jpg">
+      <publishTime>05/19/2016 00:55:42</publishTime>
+    </File>
+    <File Include="images/nav-logo.png">
+      <publishTime>05/19/2016 00:11:17</publishTime>
+    </File>
+    <File Include="images/news.jpg">
+      <publishTime>02/02/2015 19:37:10</publishTime>
+    </File>
+    <File Include="images/portfolios/design/prot-5.jpg">
+      <publishTime>01/29/2015 17:15:02</publishTime>
+    </File>
+    <File Include="images/portfolios/design/prot-6.jpg">
+      <publishTime>01/29/2015 17:16:36</publishTime>
+    </File>
+    <File Include="images/portfolios/games/prot-1.jpg">
+      <publishTime>01/29/2015 17:11:48</publishTime>
+    </File>
+    <File Include="images/portfolios/games/prot-3.jpg">
+      <publishTime>01/29/2015 17:21:26</publishTime>
+    </File>
+    <File Include="images/portfolios/games/prot-7.jpg">
+      <publishTime>01/29/2015 17:17:56</publishTime>
+    </File>
+    <File Include="images/portfolios/graphics/prot-2.jpg">
+      <publishTime>01/29/2015 17:12:44</publishTime>
+    </File>
+    <File Include="images/portfolios/graphics/prot-4.jpg">
+      <publishTime>01/29/2015 17:13:54</publishTime>
+    </File>
+    <File Include="images/portfolios/graphics/prot-8.jpg">
+      <publishTime>01/29/2015 17:19:20</publishTime>
+    </File>
+    <File Include="images/priceing1.jpg">
+      <publishTime>01/01/2010 00:44:16</publishTime>
+    </File>
+    <File Include="images/pricing.jpg">
+      <publishTime>01/01/2010 00:55:52</publishTime>
+    </File>
+    <File Include="images/process-1.png">
+      <publishTime>01/29/2015 18:15:22</publishTime>
+    </File>
+    <File Include="images/process-2.png">
+      <publishTime>01/29/2015 18:15:56</publishTime>
+    </File>
+    <File Include="images/process-3.png">
+      <publishTime>01/29/2015 18:14:28</publishTime>
+    </File>
+    <File Include="images/process-phone.png">
+      <publishTime>01/29/2015 17:00:26</publishTime>
+    </File>
+    <File Include="images/process.png">
+      <publishTime>12/31/2009 23:32:06</publishTime>
+    </File>
+    <File Include="images/services.jpg">
+      <publishTime>01/29/2015 17:03:52</publishTime>
+    </File>
+    <File Include="images/services/services-1.jpg">
+      <publishTime>01/01/2010 10:31:08</publishTime>
+    </File>
+    <File Include="images/services/services-2.jpg">
+      <publishTime>01/01/2010 10:33:58</publishTime>
+    </File>
+    <File Include="images/services/services-3.jpg">
+      <publishTime>01/01/2010 10:35:46</publishTime>
+    </File>
+    <File Include="images/team/team-1.jpg">
+      <publishTime>01/01/2010 10:54:32</publishTime>
+    </File>
+    <File Include="images/team/team-2.jpg">
+      <publishTime>02/10/2016 20:42:16</publishTime>
+    </File>
+    <File Include="images/team/team-3.jpg">
+      <publishTime>01/01/2010 03:11:16</publishTime>
+    </File>
+    <File Include="images/team/team-4.jpg">
+      <publishTime>02/10/2016 20:43:08</publishTime>
+    </File>
+    <File Include="images/works/clients2.jpg">
+      <publishTime>02/01/2015 18:59:44</publishTime>
+    </File>
+    <File Include="images/works/works-fonts-1.png">
+      <publishTime>02/01/2015 19:02:02</publishTime>
+    </File>
+    <File Include="images/works/works-fonts-2.png">
+      <publishTime>02/01/2015 19:03:12</publishTime>
+    </File>
+    <File Include="images/works/works-fonts-3.png">
+      <publishTime>02/01/2015 19:04:20</publishTime>
     </File>
     <File Include="index.html">
-      <publishTime>05/11/2016 17:48:10</publishTime>
+      <publishTime>05/19/2016 00:52:49</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>05/11/2016 18:27:01</publishTime>
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="Scripts/angular-chart.js">
+      <publishTime>04/22/2016 23:25:59</publishTime>
+    </File>
+    <File Include="Scripts/angular-chart.min.css.map">
+      <publishTime>04/22/2016 23:26:05</publishTime>
+    </File>
+    <File Include="Scripts/angular-chart.min.js">
+      <publishTime>04/22/2016 23:26:05</publishTime>
+    </File>
+    <File Include="Scripts/angular-chart.min.js.map">
+      <publishTime>04/22/2016 23:26:05</publishTime>
     </File>
     <File Include="Scripts/angular-mocks.js">
       <publishTime>05/08/2016 16:27:59</publishTime>
@@ -64,6 +364,24 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/angular.min.js.map">
       <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/17/2016 19:49:09</publishTime>
+    </File>
+    <File Include="Scripts/chart.js">
+      <publishTime>05/16/2016 22:04:14</publishTime>
+    </File>
+    <File Include="Scripts/filterable.pack.js">
+      <publishTime>07/08/2009 12:42:52</publishTime>
+    </File>
+    <File Include="Scripts/fresco/fresco.js">
+      <publishTime>12/06/2014 17:27:16</publishTime>
+    </File>
+    <File Include="Scripts/html5shiv.min.js">
+      <publishTime>01/13/2015 18:19:04</publishTime>
+    </File>
     <File Include="Scripts/jquery-2.2.3.js">
       <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
@@ -73,14 +391,29 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/jquery-2.2.3.min.map">
       <publishTime>05/10/2016 22:24:29</publishTime>
     </File>
+    <File Include="Scripts/jquery.easing.min.js">
+      <publishTime>05/10/2013 20:13:34</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mixitup.min.js">
+      <publishTime>04/30/2013 13:37:18</publishTime>
+    </File>
     <File Include="Scripts/ngStorage.js">
       <publishTime>05/11/2016 18:24:04</publishTime>
     </File>
     <File Include="Scripts/ngStorage.min.js">
       <publishTime>05/11/2016 18:23:56</publishTime>
     </File>
+    <File Include="Scripts/vendor/.DS_Store">
+      <publishTime>07/23/2014 11:06:04</publishTime>
+    </File>
+    <File Include="Scripts/vendor/modernizr-2.6.2.min.js">
+      <publishTime>05/12/2013 04:24:18</publishTime>
+    </File>
+    <File Include="Scripts/wow.min.js">
+      <publishTime>09/24/2014 11:51:32</publishTime>
+    </File>
     <File Include="user.html">
-      <publishTime>05/11/2016 18:34:54</publishTime>
+      <publishTime>05/17/2016 21:48:26</publishTime>
     </File>
     <File Include="web.config">
       <publishTime>05/14/2016 00:12:48</publishTime>
