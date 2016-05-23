@@ -135,7 +135,6 @@
     <Content Include="Scripts\templatemo_script.js" />
     <Content Include="Scripts\vendor\modernizr-2.6.2.min.js" />
     <Content Include="Scripts\wow.min.js" />
-    <Content Include="user.html" />
     <Content Include="index.html" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
@@ -166,7 +165,7 @@
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
-    <Content Include="user2.html" />
+    <Content Include="user.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>

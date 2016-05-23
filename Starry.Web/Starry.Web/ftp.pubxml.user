@@ -11,31 +11,31 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/Starry.Web.dll">
-      <publishTime>05/19/2016 20:38:31</publishTime>
+      <publishTime>05/22/2016 21:32:27</publishTime>
     </File>
     <File Include="chart.html">
       <publishTime>05/16/2016 22:04:58</publishTime>
     </File>
     <File Include="Client/Starry/app.module.js">
-      <publishTime>05/18/2016 23:56:48</publishTime>
+      <publishTime>05/22/2016 21:41:47</publishTime>
     </File>
     <File Include="Client/Starry/app.route.js">
       <publishTime>05/10/2016 00:56:44</publishTime>
     </File>
     <File Include="Client/Starry/controllers/chart.js">
-      <publishTime>05/18/2016 23:56:48</publishTime>
+      <publishTime>05/22/2016 21:41:47</publishTime>
     </File>
     <File Include="Client/Starry/controllers/index.js">
-      <publishTime>05/18/2016 23:56:48</publishTime>
+      <publishTime>05/22/2016 21:41:47</publishTime>
     </File>
     <File Include="Client/Starry/controllers/search.js">
       <publishTime>05/14/2016 00:11:04</publishTime>
     </File>
     <File Include="Client/Starry/controllers/user.js">
-      <publishTime>05/18/2016 23:56:48</publishTime>
+      <publishTime>05/22/2016 21:41:47</publishTime>
     </File>
     <File Include="Client/Starry/services/starryservice.js">
-      <publishTime>05/18/2016 23:56:48</publishTime>
+      <publishTime>05/22/2016 21:41:47</publishTime>
     </File>
     <File Include="Client/Starry/views/_search.html">
       <publishTime>05/08/2016 16:40:37</publishTime>
@@ -126,6 +126,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="css/style.css">
       <publishTime>01/01/2010 01:51:24</publishTime>
+    </File>
+    <File Include="css/templatemo_main.css">
+      <publishTime>05/22/2016 21:40:56</publishTime>
     </File>
     <File Include="fonts/fontawesome-webfont.eot">
       <publishTime>08/26/2014 11:46:50</publishTime>
@@ -326,7 +329,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/01/2015 19:04:20</publishTime>
     </File>
     <File Include="index.html">
-      <publishTime>05/19/2016 00:52:49</publishTime>
+      <publishTime>05/22/2016 21:32:18</publishTime>
     </File>
     <File Include="packages.config">
       <publishTime>05/17/2016 19:49:09</publishTime>
@@ -397,11 +400,74 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Scripts/jquery.mixitup.min.js">
       <publishTime>04/30/2013 13:37:18</publishTime>
     </File>
+    <File Include="Scripts/jqvmap/data/jquery.vmap.sampledata.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/jquery.vmap.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/jquery.vmap.min.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/jquery.vmap.packed.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/jqvmap.css">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/continents/jquery.vmap.africa.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/continents/jquery.vmap.asia.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/continents/jquery.vmap.australia.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/continents/jquery.vmap.europe.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/continents/jquery.vmap.north-america.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/continents/jquery.vmap.south-america.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/continents/readme.txt">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/jquery.vmap.algeria.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/jquery.vmap.brazil.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/jquery.vmap.europe.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/jquery.vmap.france.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/jquery.vmap.germany.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/jquery.vmap.russia.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/jquery.vmap.usa.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
+    <File Include="Scripts/jqvmap/maps/jquery.vmap.world.js">
+      <publishTime>09/22/2013 12:42:12</publishTime>
+    </File>
     <File Include="Scripts/ngStorage.js">
       <publishTime>05/11/2016 18:24:04</publishTime>
     </File>
     <File Include="Scripts/ngStorage.min.js">
       <publishTime>05/11/2016 18:23:56</publishTime>
+    </File>
+    <File Include="Scripts/templatemo_script.js">
+      <publishTime>08/06/2014 05:13:14</publishTime>
     </File>
     <File Include="Scripts/vendor/.DS_Store">
       <publishTime>07/23/2014 11:06:04</publishTime>
@@ -413,7 +479,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/24/2014 11:51:32</publishTime>
     </File>
     <File Include="user.html">
-      <publishTime>05/17/2016 21:48:26</publishTime>
+      <publishTime>05/22/2016 21:19:25</publishTime>
     </File>
     <File Include="web.config">
       <publishTime>05/14/2016 00:12:48</publishTime>
