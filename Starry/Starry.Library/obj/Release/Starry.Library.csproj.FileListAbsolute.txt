@@ -16,3 +16,10 @@ C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Library\bin\Releas
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Library\obj\Release\Starry.Library.csprojResolveAssemblyReference.cache
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Library\obj\Release\Starry.Library.dll
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Library\obj\Release\Starry.Library.pdb
+F:\Projects\Starry\Starry\Starry.Library\bin\Release\Starry.Library.dll
+F:\Projects\Starry\Starry\Starry.Library\bin\Release\Starry.Library.pdb
+F:\Projects\Starry\Starry\Starry.Library\bin\Release\Newtonsoft.Json.dll
+F:\Projects\Starry\Starry\Starry.Library\bin\Release\Newtonsoft.Json.xml
+F:\Projects\Starry\Starry\Starry.Library\obj\Release\Starry.Library.csprojResolveAssemblyReference.cache
+F:\Projects\Starry\Starry\Starry.Library\obj\Release\Starry.Library.dll
+F:\Projects\Starry\Starry\Starry.Library\obj\Release\Starry.Library.pdb

@@ -133,3 +133,4 @@ C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Tests\bin\Debug\Mi
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Tests\obj\Debug\Starry.Tests.csprojResolveAssemblyReference.cache
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Tests\obj\Debug\Starry.Tests.dll
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Tests\obj\Debug\Starry.Tests.pdb
+F:\Projects\Starry\Starry\Starry.Tests\obj\Debug\Starry.Tests.csprojResolveAssemblyReference.cache

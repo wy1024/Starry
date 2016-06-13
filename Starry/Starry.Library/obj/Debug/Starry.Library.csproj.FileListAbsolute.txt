@@ -14,3 +14,10 @@ C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Library\bin\Debug\
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Library\obj\Debug\Starry.Library.csprojResolveAssemblyReference.cache
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Library\obj\Debug\Starry.Library.dll
 C:\Users\jasonwang\Documents\Source\repo\Starry\Starry\Starry.Library\obj\Debug\Starry.Library.pdb
+F:\Projects\Starry\Starry\Starry.Library\bin\Debug\Starry.Library.dll
+F:\Projects\Starry\Starry\Starry.Library\bin\Debug\Starry.Library.pdb
+F:\Projects\Starry\Starry\Starry.Library\bin\Debug\Newtonsoft.Json.dll
+F:\Projects\Starry\Starry\Starry.Library\bin\Debug\Newtonsoft.Json.xml
+F:\Projects\Starry\Starry\Starry.Library\obj\Debug\Starry.Library.csprojResolveAssemblyReference.cache
+F:\Projects\Starry\Starry\Starry.Library\obj\Debug\Starry.Library.dll
+F:\Projects\Starry\Starry\Starry.Library\obj\Debug\Starry.Library.pdb

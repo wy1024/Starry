@@ -1,0 +1,9 @@
+F:\Projects\Starry\Starry\Starry.Database\bin\Debug\Starry.Database.dacpac
+F:\Projects\Starry\Starry\Starry.Database\bin\Debug\Starry.Database.dll
+F:\Projects\Starry\Starry\Starry.Database\bin\Debug\Starry.Database.pdb
+F:\Projects\Starry\Starry\Starry.Database\obj\Debug\Model.xml
+F:\Projects\Starry\Starry\Starry.Database\obj\Debug\refactor.xml
+F:\Projects\Starry\Starry\Starry.Database\obj\Debug\postdeploy.sql
+F:\Projects\Starry\Starry\Starry.Database\obj\Debug\predeploy.sql
+F:\Projects\Starry\Starry\Starry.Database\obj\Debug\Starry.Database.dll
+F:\Projects\Starry\Starry\Starry.Database\obj\Debug\Starry.Database.pdb
