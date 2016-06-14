@@ -58,4 +58,14 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Room.sql" />
+    <Build Include="People.sql" />
+    <Build Include="RoomDetails.sql" />
+    <Build Include="Comments.sql" />
+    <Build Include="PeopleDetails.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Starry.Database.refactorlog" />
+  </ItemGroup>
 </Project>

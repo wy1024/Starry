@@ -1,0 +1,6 @@
+F:\Projects\StarryWebsite\StarryWebsite\bin\StarryWebsite.dll.config
+F:\Projects\StarryWebsite\StarryWebsite\bin\StarryWebsite.dll
+F:\Projects\StarryWebsite\StarryWebsite\bin\StarryWebsite.pdb
+F:\Projects\StarryWebsite\StarryWebsite\obj\Debug\StarryWebsite.csprojResolveAssemblyReference.cache
+F:\Projects\StarryWebsite\StarryWebsite\obj\Debug\StarryWebsite.dll
+F:\Projects\StarryWebsite\StarryWebsite\obj\Debug\StarryWebsite.pdb
