@@ -1,0 +1,10 @@
+F:\Projects\Starry\Starry\Starry.Runner\bin\Release\Starry.Runner.exe.config
+F:\Projects\Starry\Starry\Starry.Runner\bin\Release\Starry.Runner.exe
+F:\Projects\Starry\Starry\Starry.Runner\bin\Release\Starry.Runner.pdb
+F:\Projects\Starry\Starry\Starry.Runner\bin\Release\Starry.Library.dll
+F:\Projects\Starry\Starry\Starry.Runner\bin\Release\Newtonsoft.Json.dll
+F:\Projects\Starry\Starry\Starry.Runner\bin\Release\Starry.Library.pdb
+F:\Projects\Starry\Starry\Starry.Runner\bin\Release\Newtonsoft.Json.xml
+F:\Projects\Starry\Starry\Starry.Runner\obj\Release\Starry.Runner.csprojResolveAssemblyReference.cache
+F:\Projects\Starry\Starry\Starry.Runner\obj\Release\Starry.Runner.exe
+F:\Projects\Starry\Starry\Starry.Runner\obj\Release\Starry.Runner.pdb

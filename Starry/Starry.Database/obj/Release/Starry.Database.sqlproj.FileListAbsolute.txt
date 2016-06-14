@@ -1,0 +1,9 @@
+F:\Projects\Starry\Starry\Starry.Database\bin\Release\Starry.Database.dacpac
+F:\Projects\Starry\Starry\Starry.Database\bin\Release\Starry.Database.dll
+F:\Projects\Starry\Starry\Starry.Database\bin\Release\Starry.Database.pdb
+F:\Projects\Starry\Starry\Starry.Database\obj\Release\Model.xml
+F:\Projects\Starry\Starry\Starry.Database\obj\Release\refactor.xml
+F:\Projects\Starry\Starry\Starry.Database\obj\Release\postdeploy.sql
+F:\Projects\Starry\Starry\Starry.Database\obj\Release\predeploy.sql
+F:\Projects\Starry\Starry\Starry.Database\obj\Release\Starry.Database.dll
+F:\Projects\Starry\Starry\Starry.Database\obj\Release\Starry.Database.pdb
