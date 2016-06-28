@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{290b7a4f-b5d8-4e83-a684-a078d9a8ec53}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -61,7 +61,6 @@
   <ItemGroup>
     <Build Include="Room.sql" />
     <Build Include="People.sql" />
-    <Build Include="RoomDetails.sql" />
     <Build Include="Comments.sql" />
     <Build Include="PeopleDetails.sql" />
   </ItemGroup>

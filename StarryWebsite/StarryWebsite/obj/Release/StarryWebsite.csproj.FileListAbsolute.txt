@@ -1,0 +1,5 @@
+F:\Projects\Starry\StarryWebsite\StarryWebsite\bin\StarryWebsite.dll.config
+F:\Projects\Starry\StarryWebsite\StarryWebsite\bin\StarryWebsite.dll
+F:\Projects\Starry\StarryWebsite\StarryWebsite\bin\StarryWebsite.pdb
+F:\Projects\Starry\StarryWebsite\StarryWebsite\obj\Release\StarryWebsite.dll
+F:\Projects\Starry\StarryWebsite\StarryWebsite\obj\Release\StarryWebsite.pdb

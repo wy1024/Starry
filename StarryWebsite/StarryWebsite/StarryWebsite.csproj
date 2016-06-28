@@ -22,11 +22,22 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\company\company-search.css" />
+    <Content Include="views\company\company-dashboard.html" />
+    <Content Include="views\company\company-goal.html" />
+    <Content Include="views\company\company-search.html" />
+    <Content Include="company.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="details.html" />
+    <Content Include="Content\company\company.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\IndexFramework.css" />
+    <Content Include="Content\IndexLayout.css" />
+    <Content Include="views\kol\details.html" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="font\socialico-webfont.svg" />
     <Content Include="font\socialico_plus-webfont.svg" />
@@ -38,6 +49,7 @@
     <Content Include="img\avatar-2.png" />
     <Content Include="img\avatar.jpg" />
     <Content Include="img\avatar.png" />
+    <Content Include="img\concert-crowd-crop.jpg" />
     <Content Include="img\cross-menu.svg" />
     <Content Include="img\fleche-nav.svg" />
     <Content Include="img\fleche.svg" />
@@ -91,6 +103,10 @@
     <Content Include="img\ui-1.jpg" />
     <Content Include="img\_notes\dwsync.xml" />
     <Content Include="index.html" />
+    <Content Include="Scripts\jquery.backtotop.js" />
+    <Content Include="Scripts\jquery.mobilemenu.js" />
+    <Content Include="Scripts\jquery.placeholder.min.js" />
+    <Content Include="search.html" />
     <Content Include="js\fastclick.min.js" />
     <Content Include="js\Gruntfile.js" />
     <Content Include="js\jquery-animate-css-rotate-scale.js" />
@@ -111,12 +127,20 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <None Include="ftp starryweb.azurewebsites.net.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
     <Content Include="test.html" />
+    <Content Include="views\company\company-select.html" />
+    <Content Include="views\company\company-track.html" />
     <Content Include="web.config" />
     <Content Include="_notes\dwsync.xml" />
   </ItemGroup>
@@ -142,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="js\Starry\app.module.ts" />
+    <TypeScriptCompile Include="js\Starry\Controller\company.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\list.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\user.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
@@ -154,6 +179,9 @@
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\_all.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\kol\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

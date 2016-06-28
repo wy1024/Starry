@@ -4,3 +4,9 @@ F:\Projects\StarryWebsite\StarryWebsite\bin\StarryWebsite.pdb
 F:\Projects\StarryWebsite\StarryWebsite\obj\Debug\StarryWebsite.csprojResolveAssemblyReference.cache
 F:\Projects\StarryWebsite\StarryWebsite\obj\Debug\StarryWebsite.dll
 F:\Projects\StarryWebsite\StarryWebsite\obj\Debug\StarryWebsite.pdb
+F:\Projects\Starry\StarryWebsite\StarryWebsite\bin\StarryWebsite.dll.config
+F:\Projects\Starry\StarryWebsite\StarryWebsite\bin\StarryWebsite.dll
+F:\Projects\Starry\StarryWebsite\StarryWebsite\bin\StarryWebsite.pdb
+F:\Projects\Starry\StarryWebsite\StarryWebsite\obj\Debug\StarryWebsite.csprojResolveAssemblyReference.cache
+F:\Projects\Starry\StarryWebsite\StarryWebsite\obj\Debug\StarryWebsite.dll
+F:\Projects\Starry\StarryWebsite\StarryWebsite\obj\Debug\StarryWebsite.pdb

@@ -1,0 +1,23 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Comments] (Table)
+       [dbo].[People] (Table)
+       [dbo].[PeopleDetails] (Table)
+       [dbo].[Room] (Table)
+       [dbo].[RoomDetails] (Table)
+       Default Constraint: unnamed constraint on [dbo].[People] (Default Constraint)
+       [dbo].[FK_Comments_ToRoom] (Foreign Key)
+       [dbo].[FK_Room_ToPeople] (Foreign Key)
+       [dbo].[FK_RoomDetails_ToRoom] (Foreign Key)
+
+** Supporting actions

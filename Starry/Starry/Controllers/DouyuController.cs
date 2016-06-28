@@ -17,6 +17,8 @@ using System.Web.Http.Cors;
 using Starry.Library.WeiboUtil;
 using System.Collections.Specialized;
 using System.Net.Http;
+using System.Threading.Tasks;
+using System.Web.Http.Results;
 
 namespace Starry.Controllers
 {
@@ -37,7 +39,7 @@ namespace Starry.Controllers
         /// <param name="limit"></param>
         /// <returns></returns>
         [Route("api/RoomApi/live/{offset}/{limit}")]
-        public string GetRoomsList(int offset = 0, int limit = 30)
+        public async Task<JsonResult<string>> GetRoomsList(int offset = 0, int limit = 30)
         {
             string url = "http://open.douyucdn.cn/api/RoomApi/live/lol";
             string urlParameters = $"?limit={limit}&offset={offset}";
@@ -47,17 +49,17 @@ namespace Starry.Controllers
 
             // Get data response.
             var responseString = "";
-            HttpResponseMessage response = client.GetAsync(urlParameters).Result;  // Blocking call!
+            HttpResponseMessage response = await client.GetAsync(urlParameters);  // Blocking call!
             if (response.IsSuccessStatusCode)
             {
                 // Parse the response body. Blocking!
-                responseString = response.Content.ReadAsStringAsync().Result;
+                responseString = await response.Content.ReadAsStringAsync();
             }
             else
             {
                 responseString = "Failed to get rooms";
             }
-            return responseString;
+            return Json(responseString);
         }
 
         /// <summary>
@@ -67,7 +69,7 @@ namespace Starry.Controllers
         /// <param name="limit"></param>
         /// <returns></returns>
         [Route("api/RoomApi/game")]
-        public string GetRoomsCategory()
+        public async Task<JsonResult<string>> GetRoomsCategory()
         {
             string url = "http://open.douyucdn.cn/api/RoomApi/game";
 
@@ -76,21 +78,21 @@ namespace Starry.Controllers
 
             // Get data response.
             var responseString = "";
-            HttpResponseMessage response = client.GetAsync(string.Empty).Result;  // Blocking call!
+            HttpResponseMessage response = await client.GetAsync(string.Empty);  // Blocking call!
             if (response.IsSuccessStatusCode)
             {
                 // Parse the response body. Blocking!
-                responseString = response.Content.ReadAsStringAsync().Result;
+                responseString = await response.Content.ReadAsStringAsync();
             }
             else
             {
                 responseString = "Failed to get game category";
             }
-            return responseString;
+            return Json(responseString);
         }
 
         [Route("api/RoomApi/room/{id}")]
-        public string GetRoomInfo(int id)
+        public async Task<JsonResult<string>> GetRoomInfo(int id)
         {
             string url = $"http://open.douyucdn.cn/api/RoomApi/room/{id}";
 
@@ -99,17 +101,17 @@ namespace Starry.Controllers
 
             // Get data response.
             var responseString = "";
-            HttpResponseMessage response = client.GetAsync(string.Empty).Result;  // Blocking call!
+            HttpResponseMessage response = await client.GetAsync(string.Empty);  // Blocking call!
             if (response.IsSuccessStatusCode)
             {
                 // Parse the response body. Blocking!
-                responseString = response.Content.ReadAsStringAsync().Result;
+                responseString = await response.Content.ReadAsStringAsync();
             }
             else
             {
                 responseString = "Failed to get room info";
             }
-            return responseString;
+            return Json(responseString);
         }
     }
 }
