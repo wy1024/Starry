@@ -21,6 +21,13 @@
                     <i class="fa fa-star-half-o"></i>
                     <p>让你的客户为你着迷</p>
                 </div>
+                <div id="main_tip_search" ng-if="companyScope=='search'">
+                    <form>
+                        <input type="text" name="search" id="tip_search_input" 
+                               list="search" autocomplete="off" required=""
+                               placeholder="搜索关键词">
+                    </form>
+                </div>
             </header>
         </div>
     </div>
@@ -45,8 +52,16 @@
                 采纳推广计划
             </li>
             <li class="border" ng-click="companyScope = 'track'">
-                <i class="fa fa-location-arrow"></i>
+                <i class="fa fa-paper-plane-o"></i>
                 进度追踪
+            </li>
+            <li class="border" ng-click="companyScope = 'history'">
+                <i class="fa fa-calendar"></i>
+                历史记录
+            </li>
+            <li class="border" ng-click="companyScope = 'help'">
+                <i class="fa fa-phone"></i>
+                在线帮助
             </li>
         </ul>
     </div>

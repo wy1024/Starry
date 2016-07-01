@@ -12,6 +12,7 @@
 .main {
     position: absolute;
     left:220px; top:70px; right:0; bottom:0;
+    background-color:white;
 }
 
 .left .linklist li{
@@ -38,6 +39,8 @@
     margin-left:20px;
 }
 
-fa {
-    color
+#dashboardMain {
+    margin-left: 5%;
+    margin-top: 2%;
+    padding: 20px;
 }

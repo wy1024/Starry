@@ -22,11 +22,22 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="company\company-help.html" />
+    <Content Include="company\company-history.html" />
     <Content Include="Content\company\company-search.css" />
-    <Content Include="views\company\company-dashboard.html" />
-    <Content Include="views\company\company-goal.html" />
-    <Content Include="views\company\company-search.html" />
-    <Content Include="company.html" />
+    <Content Include="Content\select2.min.css" />
+    <Content Include="img\网红\wh1.jpg" />
+    <Content Include="img\网红\wh2.jpg" />
+    <Content Include="img\网红\wh3.jpg" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="company\company-dashboard.html" />
+    <Content Include="company\company-goal.html" />
+    <Content Include="company\company-search.html" />
+    <Content Include="company\index.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -36,13 +47,13 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\IndexFramework.css" />
     <Content Include="Content\IndexLayout.css" />
+    <Content Include="Scripts\select2.min.js" />
     <Content Include="views\kol\details.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="font\socialico-webfont.svg" />
     <Content Include="font\socialico_plus-webfont.svg" />
     <Content Include="font\_notes\dwsync.xml" />
-    <Content Include="form-burstfly.asp" />
     <Content Include="img\ai-1.jpg" />
     <Content Include="img\ai-2.jpg" />
     <Content Include="img\arrowy.svg" />
@@ -116,9 +127,6 @@
     <Content Include="js\jquery.localScroll.min.js" />
     <Content Include="js\jquery.scrollTo.min.js" />
     <Content Include="js\_notes\dwsync.xml" />
-    <Content Include="Scripts\angular-mocks.js" />
-    <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\angular.min.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -133,16 +141,17 @@
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="ftp starryweb.azurewebsites.net.pubxml" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
     <Content Include="test.html" />
-    <Content Include="views\company\company-select.html" />
-    <Content Include="views\company\company-track.html" />
+    <Content Include="company\company-select.html" />
+    <Content Include="company\company-track.html" />
     <Content Include="web.config" />
-    <Content Include="_notes\dwsync.xml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="font\socialico-webfont.eot" />
@@ -154,7 +163,6 @@
     <Content Include="font\socialico_plus-webfont.woff" />
     <Content Include="font\socialico_plus-webfont.woff2" />
     <Content Include="img\.DS_Store" />
-    <Content Include="Scripts\angular.min.js.map" />
     <Content Include="packages.config" />
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <None Include="web.Debug.config">
@@ -166,9 +174,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="js\Starry\app.module.ts" />
+    <TypeScriptCompile Include="js\Starry\Controller\company-search.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\company.ts" />
-    <TypeScriptCompile Include="js\Starry\Controller\list.ts" />
-    <TypeScriptCompile Include="js\Starry\Controller\user.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-cookies.d.ts" />
@@ -182,6 +189,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\kol\" />
+    <Folder Include="views\company\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

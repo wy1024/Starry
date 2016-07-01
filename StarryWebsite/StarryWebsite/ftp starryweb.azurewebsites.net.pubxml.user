@@ -11,10 +11,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/StarryWebsite.dll">
-      <publishTime>06/28/2016 01:37:27</publishTime>
+      <publishTime>06/28/2016 23:58:00</publishTime>
     </File>
     <File Include="company.html">
-      <publishTime>06/28/2016 01:26:30</publishTime>
+      <publishTime>06/28/2016 22:53:18</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css">
       <publishTime>06/14/2016 00:59:52</publishTime>
@@ -41,10 +41,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/14/2016 00:59:52</publishTime>
     </File>
     <File Include="Content/company/company-search.css">
-      <publishTime>06/28/2016 01:34:54</publishTime>
+      <publishTime>06/28/2016 22:51:27</publishTime>
     </File>
     <File Include="Content/company/company.css">
-      <publishTime>06/28/2016 01:17:42</publishTime>
+      <publishTime>06/28/2016 22:14:20</publishTime>
     </File>
     <File Include="Content/font-awesome.css">
       <publishTime>06/26/2016 19:06:03</publishTime>
@@ -56,7 +56,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/26/2016 18:46:16</publishTime>
     </File>
     <File Include="Content/IndexLayout.css">
-      <publishTime>06/27/2016 21:35:33</publishTime>
+      <publishTime>06/28/2016 23:20:37</publishTime>
     </File>
     <File Include="font/socialico-webfont.eot">
       <publishTime>11/19/2014 22:29:16</publishTime>
@@ -307,8 +307,17 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="img/_notes/dwsync.xml">
       <publishTime>10/02/2015 21:35:48</publishTime>
     </File>
+    <File Include="img/网红/wh1.jpg">
+      <publishTime>06/28/2016 23:37:14</publishTime>
+    </File>
+    <File Include="img/网红/wh2.jpg">
+      <publishTime>06/28/2016 23:41:53</publishTime>
+    </File>
+    <File Include="img/网红/wh3.jpg">
+      <publishTime>06/28/2016 23:14:36</publishTime>
+    </File>
     <File Include="index.html">
-      <publishTime>06/28/2016 01:18:57</publishTime>
+      <publishTime>06/28/2016 23:57:48</publishTime>
     </File>
     <File Include="js/fastclick.min.js">
       <publishTime>01/21/2015 04:57:24</publishTime>
@@ -395,7 +404,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/14/2016 01:03:31</publishTime>
     </File>
     <File Include="views/company/company-dashboard.html">
-      <publishTime>06/28/2016 00:17:35</publishTime>
+      <publishTime>06/28/2016 22:36:17</publishTime>
     </File>
     <File Include="views/company/company-goal.html">
       <publishTime>06/28/2016 00:17:23</publishTime>
