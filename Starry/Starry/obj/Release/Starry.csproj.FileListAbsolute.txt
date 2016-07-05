@@ -200,7 +200,6 @@ F:\Projects\Starry\Starry\Starry\bin\Microsoft.Owin.Security.Twitter.dll
 F:\Projects\Starry\Starry\Starry\bin\Microsoft.Web.Infrastructure.dll
 F:\Projects\Starry\Starry\Starry\bin\Newtonsoft.Json.dll
 F:\Projects\Starry\Starry\Starry\bin\Owin.dll
-F:\Projects\Starry\Starry\Starry\bin\Starry.Library.dll
 F:\Projects\Starry\Starry\Starry\bin\System.Net.Http.Formatting.dll
 F:\Projects\Starry\Starry\Starry\bin\System.Web.Cors.dll
 F:\Projects\Starry\Starry\Starry\bin\System.Web.Helpers.dll
@@ -215,7 +214,6 @@ F:\Projects\Starry\Starry\Starry\bin\System.Web.WebPages.Deployment.dll
 F:\Projects\Starry\Starry\Starry\bin\System.Web.WebPages.dll
 F:\Projects\Starry\Starry\Starry\bin\System.Web.WebPages.Razor.dll
 F:\Projects\Starry\Starry\Starry\bin\WebGrease.dll
-F:\Projects\Starry\Starry\Starry\bin\Starry.Library.pdb
 F:\Projects\Starry\Starry\Starry\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 F:\Projects\Starry\Starry\Starry\bin\Newtonsoft.Json.xml
 F:\Projects\Starry\Starry\Starry\bin\System.Web.Http.Cors.xml
@@ -245,6 +243,8 @@ F:\Projects\Starry\Starry\Starry\bin\Microsoft.Owin.Security.Google.xml
 F:\Projects\Starry\Starry\Starry\bin\Microsoft.Owin.Security.Twitter.xml
 F:\Projects\Starry\Starry\Starry\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 F:\Projects\Starry\Starry\Starry\bin\System.Web.Http.Owin.xml
-F:\Projects\Starry\Starry\Starry\obj\Release\Starry.csprojResolveAssemblyReference.cache
 F:\Projects\Starry\Starry\Starry\obj\Release\Starry.dll
 F:\Projects\Starry\Starry\Starry\obj\Release\Starry.pdb
+F:\Projects\Starry\Starry\Starry\obj\Release\Starry.csprojResolveAssemblyReference.cache
+F:\Projects\Starry\Starry\Starry\bin\Starry.Lib.dll
+F:\Projects\Starry\Starry\Starry\bin\Starry.Lib.pdb

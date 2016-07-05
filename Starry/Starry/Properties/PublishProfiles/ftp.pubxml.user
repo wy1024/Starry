@@ -173,7 +173,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/12/2016 10:58:40</publishTime>
     </File>
     <File Include="bin/Starry.dll">
-      <publishTime>06/12/2016 22:06:26</publishTime>
+      <publishTime>07/04/2016 11:25:07</publishTime>
+    </File>
+    <File Include="bin/Starry.Lib.dll">
+      <publishTime>07/04/2016 11:19:52</publishTime>
     </File>
     <File Include="bin/Starry.Library.dll">
       <publishTime>06/12/2016 22:06:23</publishTime>
@@ -290,7 +293,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/12/2016 10:58:39</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>06/12/2016 10:58:39</publishTime>
+      <publishTime>07/03/2016 17:04:55</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>06/12/2016 10:58:39</publishTime>
@@ -305,7 +308,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/12/2016 10:58:39</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/12/2016 22:06:47</publishTime>
+      <publishTime>07/04/2016 12:21:45</publishTime>
     </File>
   </ItemGroup>
 </Project>
