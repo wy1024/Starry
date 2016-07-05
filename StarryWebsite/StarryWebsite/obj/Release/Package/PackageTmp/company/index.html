@@ -2,15 +2,26 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
 
-    <script src="Scripts/angular.min.js"></script>
-    <script src="js/Starry/Controller/company.js"></script>
+    <!--Library-->
+    <script src="../Scripts/jquery-2.2.3.min.js"></script>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/angular-route.min.js"></script>
+    <script src="../Scripts/select2.min.js"></script>
 
-    <link href="Content/IndexLayout.css" rel="stylesheet" />
-    <link href="Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="Content/company/company.css" rel="stylesheet" />
-    <link href="Content/company/company-search.css" rel="stylesheet" />
+    <!--App-->
+    <script src="../js/Starry/Controller/company.js"></script>
+    <script src="../js/Starry/Controller/company-search.js"></script>
+
+    <!--Stylesheet-->
+    <link href="../Content/IndexLayout.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/company/company.css" rel="stylesheet" />
+    <link href="../Content/company/company-search.css" rel="stylesheet" />
+    <link href="../Content/select2.min.css" rel="stylesheet" />
+
+
 </head>
 <body ng-app="Starry" ng-controller="CompanyController">
     <div class="top">
@@ -23,7 +34,7 @@
                 </div>
                 <div id="main_tip_search" ng-if="companyScope=='search'">
                     <form>
-                        <input type="text" name="search" id="tip_search_input" 
+                        <input type="text" name="search" id="tip_search_input"
                                list="search" autocomplete="off" required=""
                                placeholder="搜索关键词">
                     </form>
@@ -35,42 +46,44 @@
     <!--Left Sidebar-->
     <div class="left row1">
         <ul class="nospace linklist contact table-hover">
-            <li class="border" ng-click="companyScope = 'dashboard'">
+            <li class="border" onclick="location.href='#/dashboard'">
                 <i class="fa fa-star-o"></i>
                 我的星空
             </li>
-            <li class="border" ng-click="companyScope = 'goal'">
+            <li class="border" onclick="location.href='#/goal'">
                 <i class="fa fa-flag-o"></i>
                 推广目标
             </li>
-            <li class="border" ng-click="companyScope = 'search'">
+            <li class="border" onclick="location.href='#/search'">
                 <i class="fa fa-search"></i>
                 自媒体搜索
             </li>
-            <li class="border" ng-click="companyScope = 'select'">
+            <li class="border" onclick="location.href='#/select'">
                 <i class="fa fa-thumbs-o-up"></i>
                 采纳推广计划
             </li>
-            <li class="border" ng-click="companyScope = 'track'">
+            <li class="border" onclick="location.href='#/track'">
                 <i class="fa fa-paper-plane-o"></i>
                 进度追踪
             </li>
-            <li class="border" ng-click="companyScope = 'history'">
+            <li class="border" onclick="location.href='#/history'">
                 <i class="fa fa-calendar"></i>
                 历史记录
             </li>
-            <li class="border" ng-click="companyScope = 'help'">
+            <li class="border" onclick="location.href='#/help'">
                 <i class="fa fa-phone"></i>
                 在线帮助
             </li>
         </ul>
     </div>
     <div class="main">
-        <div ng-if="companyScope=='dashboard'" ng-include="'/views/company/company-dashboard.html'"></div>
+        <ng-view></ng-view>
+
+        <!--<div ng-if="companyScope=='dashboard'" ng-include="'/views/company/company-dashboard.html'"></div>
         <div ng-if="companyScope=='goal'" ng-include="'/views/company/company-goal.html'"></div>
         <div ng-if="companyScope=='search'" ng-include="'/views/company/company-search.html'"></div>
         <div ng-if="companyScope=='select'" ng-include="'/views/company/company-select.html'"></div>
-        <div ng-if="companyScope=='track'" ng-include="'/views/company/company-track.html'"></div>
+        <div ng-if="companyScope=='track'" ng-include="'/views/company/company-track.html'"></div>-->
     </div>
 </body>
 </html>

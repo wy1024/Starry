@@ -8,11 +8,14 @@
     <script src="../Scripts/jquery-2.2.3.min.js"></script>
     <script src="../Scripts/angular.min.js"></script>
     <script src="../Scripts/angular-route.min.js"></script>
+    <script src="../Scripts/Chart.min.js"></script>
+    <script src="../Scripts/angular-chart.min.js"></script>
     <script src="../Scripts/select2.min.js"></script>
 
     <!--App-->
     <script src="../js/Starry/Controller/company.js"></script>
     <script src="../js/Starry/Controller/company-search.js"></script>
+    <script src="../js/Starry/Controller/company-track.js"></script>
 
     <!--Stylesheet-->
     <link href="../Content/IndexLayout.css" rel="stylesheet" />
@@ -24,6 +27,7 @@
 
 </head>
 <body ng-app="Starry" ng-controller="CompanyController">
+    <!--Header Content-->
     <div class="top">
         <div class="wrapper row4">
             <header id="header" class="clear">
@@ -76,14 +80,10 @@
             </li>
         </ul>
     </div>
+
+    <!--Main Content-->
     <div class="main">
         <ng-view></ng-view>
-
-        <!--<div ng-if="companyScope=='dashboard'" ng-include="'/views/company/company-dashboard.html'"></div>
-        <div ng-if="companyScope=='goal'" ng-include="'/views/company/company-goal.html'"></div>
-        <div ng-if="companyScope=='search'" ng-include="'/views/company/company-search.html'"></div>
-        <div ng-if="companyScope=='select'" ng-include="'/views/company/company-select.html'"></div>
-        <div ng-if="companyScope=='track'" ng-include="'/views/company/company-track.html'"></div>-->
     </div>
 </body>
 </html>

@@ -11,10 +11,34 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/StarryWebsite.dll">
-      <publishTime>06/28/2016 23:58:00</publishTime>
+      <publishTime>07/01/2016 01:59:20</publishTime>
     </File>
     <File Include="company.html">
       <publishTime>06/28/2016 22:53:18</publishTime>
+    </File>
+    <File Include="company/company-dashboard.html">
+      <publishTime>06/28/2016 22:36:17</publishTime>
+    </File>
+    <File Include="company/company-goal.html">
+      <publishTime>07/01/2016 01:56:57</publishTime>
+    </File>
+    <File Include="company/company-help.html">
+      <publishTime>06/30/2016 00:12:07</publishTime>
+    </File>
+    <File Include="company/company-history.html">
+      <publishTime>06/30/2016 00:11:52</publishTime>
+    </File>
+    <File Include="company/company-search.html">
+      <publishTime>06/30/2016 00:14:14</publishTime>
+    </File>
+    <File Include="company/company-select.html">
+      <publishTime>06/28/2016 00:31:11</publishTime>
+    </File>
+    <File Include="company/company-track.html">
+      <publishTime>06/28/2016 00:31:28</publishTime>
+    </File>
+    <File Include="company/index.html">
+      <publishTime>07/01/2016 01:58:38</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css">
       <publishTime>06/14/2016 00:59:52</publishTime>
@@ -57,6 +81,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Content/IndexLayout.css">
       <publishTime>06/28/2016 23:20:37</publishTime>
+    </File>
+    <File Include="Content/select2.min.css">
+      <publishTime>07/01/2016 01:35:18</publishTime>
     </File>
     <File Include="font/socialico-webfont.eot">
       <publishTime>11/19/2014 22:29:16</publishTime>
@@ -317,7 +344,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/28/2016 23:14:36</publishTime>
     </File>
     <File Include="index.html">
-      <publishTime>06/28/2016 23:57:48</publishTime>
+      <publishTime>06/30/2016 00:13:54</publishTime>
     </File>
     <File Include="js/fastclick.min.js">
       <publishTime>01/21/2015 04:57:24</publishTime>
@@ -344,10 +371,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/19/2014 22:32:14</publishTime>
     </File>
     <File Include="js/Starry/app.module.js">
-      <publishTime>06/28/2016 00:30:26</publishTime>
+      <publishTime>07/01/2016 00:58:33</publishTime>
+    </File>
+    <File Include="js/Starry/Controller/company-search.js">
+      <publishTime>07/01/2016 00:58:33</publishTime>
     </File>
     <File Include="js/Starry/Controller/company.js">
-      <publishTime>06/28/2016 00:30:26</publishTime>
+      <publishTime>07/01/2016 00:58:33</publishTime>
     </File>
     <File Include="js/Starry/Controller/list.js">
       <publishTime>06/28/2016 00:30:26</publishTime>
@@ -359,19 +389,28 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/08/2015 06:16:00</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>06/26/2016 19:06:03</publishTime>
+      <publishTime>06/29/2016 22:44:06</publishTime>
     </File>
     <File Include="Scripts/angular-mocks.js">
-      <publishTime>06/14/2016 00:56:04</publishTime>
+      <publishTime>06/29/2016 22:44:05</publishTime>
+    </File>
+    <File Include="Scripts/angular-route.js">
+      <publishTime>06/29/2016 22:44:06</publishTime>
+    </File>
+    <File Include="Scripts/angular-route.min.js">
+      <publishTime>06/29/2016 22:44:06</publishTime>
+    </File>
+    <File Include="Scripts/angular-route.min.js.map">
+      <publishTime>06/29/2016 22:44:06</publishTime>
     </File>
     <File Include="Scripts/angular.js">
-      <publishTime>06/14/2016 00:56:04</publishTime>
+      <publishTime>06/29/2016 22:44:05</publishTime>
     </File>
     <File Include="Scripts/angular.min.js">
-      <publishTime>06/14/2016 00:56:04</publishTime>
+      <publishTime>06/29/2016 22:44:05</publishTime>
     </File>
     <File Include="Scripts/angular.min.js.map">
-      <publishTime>06/14/2016 00:56:04</publishTime>
+      <publishTime>06/29/2016 22:44:05</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>06/14/2016 00:59:52</publishTime>
@@ -396,6 +435,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Scripts/jquery.placeholder.min.js">
       <publishTime>06/26/2016 18:44:06</publishTime>
+    </File>
+    <File Include="Scripts/select2.min.js">
+      <publishTime>07/01/2016 01:52:39</publishTime>
     </File>
     <File Include="search.html">
       <publishTime>06/14/2016 00:57:23</publishTime>

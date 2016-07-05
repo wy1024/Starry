@@ -24,11 +24,13 @@
   <ItemGroup>
     <Content Include="company\company-help.html" />
     <Content Include="company\company-history.html" />
+    <Content Include="Content\angular-chart.css" />
     <Content Include="Content\company\company-search.css" />
     <Content Include="Content\select2.min.css" />
     <Content Include="img\网红\wh1.jpg" />
     <Content Include="img\网红\wh2.jpg" />
     <Content Include="img\网红\wh3.jpg" />
+    <Content Include="Scripts\angular-chart.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
@@ -47,6 +49,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\IndexFramework.css" />
     <Content Include="Content\IndexLayout.css" />
+    <Content Include="Scripts\Chart.min.js" />
     <Content Include="Scripts\select2.min.js" />
     <Content Include="views\kol\details.html" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -175,6 +178,7 @@
   <ItemGroup>
     <TypeScriptCompile Include="js\Starry\app.module.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\company-search.ts" />
+    <TypeScriptCompile Include="js\Starry\Controller\company-track.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\company.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-component-router.d.ts" />
