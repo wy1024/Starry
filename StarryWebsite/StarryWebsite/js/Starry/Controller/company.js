@@ -1,5 +1,5 @@
 //// <reference path="../../scripts/typings/_all.d.ts" />
-var App = angular.module("Starry", ["ngRoute"]);
+var App = angular.module("Starry", ["ngRoute", "chart.js"]);
 var Starry;
 (function (Starry) {
     var CompanyController = (function () {
@@ -33,7 +33,7 @@ var Starry;
             })
                 .when("/track", {
                 templateUrl: "company-track.html",
-                controller: "CompanySearchController as vm"
+                controller: "CompanyTrackController as vm"
             })
                 .when("/history", {
                 templateUrl: "company-history.html",

@@ -1,0 +1,5 @@
+F:\Projects\Starry\Starry\Starry.Lib\bin\Release\Starry.Lib.dll
+F:\Projects\Starry\Starry\Starry.Lib\bin\Release\Starry.Lib.pdb
+F:\Projects\Starry\Starry\Starry.Lib\obj\Release\Starry.Lib.dll
+F:\Projects\Starry\Starry\Starry.Lib\obj\Release\Starry.Lib.pdb
+F:\Projects\Starry\Starry\Starry.Lib\obj\Release\Starry.Lib.csprojResolveAssemblyReference.cache
