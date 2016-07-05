@@ -1,2 +1,6 @@
 *.VC.opendb
 *.VC.db
+*.suo
+*.dbmdl
+StarryWebsite/StarryWebsite/bin/
+StarryWebsite/StarryWebsite/obj/Debug/

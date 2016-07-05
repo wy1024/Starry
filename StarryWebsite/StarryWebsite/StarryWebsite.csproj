@@ -151,7 +151,6 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
-    <Content Include="test.html" />
     <Content Include="company\company-select.html" />
     <Content Include="company\company-track.html" />
     <Content Include="web.config" />
