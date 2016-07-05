@@ -11,7 +11,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/StarryWebsite.dll">
-      <publishTime>07/01/2016 01:59:20</publishTime>
+      <publishTime>07/04/2016 21:39:59</publishTime>
     </File>
     <File Include="company.html">
       <publishTime>06/28/2016 22:53:18</publishTime>
@@ -35,10 +35,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/28/2016 00:31:11</publishTime>
     </File>
     <File Include="company/company-track.html">
-      <publishTime>06/28/2016 00:31:28</publishTime>
+      <publishTime>07/02/2016 00:27:14</publishTime>
     </File>
     <File Include="company/index.html">
-      <publishTime>07/01/2016 01:58:38</publishTime>
+      <publishTime>07/01/2016 23:59:37</publishTime>
+    </File>
+    <File Include="Content/angular-chart.css">
+      <publishTime>07/01/2016 23:38:27</publishTime>
     </File>
     <File Include="Content/bootstrap-theme.css">
       <publishTime>06/14/2016 00:59:52</publishTime>
@@ -371,13 +374,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/19/2014 22:32:14</publishTime>
     </File>
     <File Include="js/Starry/app.module.js">
-      <publishTime>07/01/2016 00:58:33</publishTime>
+      <publishTime>07/04/2016 21:30:30</publishTime>
     </File>
     <File Include="js/Starry/Controller/company-search.js">
-      <publishTime>07/01/2016 00:58:33</publishTime>
+      <publishTime>07/04/2016 21:30:30</publishTime>
+    </File>
+    <File Include="js/Starry/Controller/company-track.js">
+      <publishTime>07/04/2016 21:30:30</publishTime>
     </File>
     <File Include="js/Starry/Controller/company.js">
-      <publishTime>07/01/2016 00:58:33</publishTime>
+      <publishTime>07/04/2016 21:30:30</publishTime>
     </File>
     <File Include="js/Starry/Controller/list.js">
       <publishTime>06/28/2016 00:30:26</publishTime>
@@ -390,6 +396,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="packages.config">
       <publishTime>06/29/2016 22:44:06</publishTime>
+    </File>
+    <File Include="Scripts/angular-chart.min.js">
+      <publishTime>07/02/2016 00:00:54</publishTime>
     </File>
     <File Include="Scripts/angular-mocks.js">
       <publishTime>06/29/2016 22:44:05</publishTime>
@@ -417,6 +426,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Scripts/bootstrap.min.js">
       <publishTime>06/14/2016 00:59:52</publishTime>
+    </File>
+    <File Include="Scripts/Chart.min.js">
+      <publishTime>07/02/2016 00:00:27</publishTime>
     </File>
     <File Include="Scripts/jquery-2.2.3.js">
       <publishTime>06/14/2016 00:56:32</publishTime>

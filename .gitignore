@@ -4,3 +4,14 @@
 *.dbmdl
 StarryWebsite/StarryWebsite/bin/
 StarryWebsite/StarryWebsite/obj/Debug/
+Starry/Starry.Database/bin/
+Starry/Starry.Database/obj/
+Starry/Starry.Lib/bin/Debug/
+Starry/Starry.Lib/obj/Debug/
+Starry/Starry/obj/Debug/
+StarryWebsite/StarryWebsite/obj/Release/Package/PackageTmp/
+StarryWebsite/StarryWebsite/obj/
+Starry/Starry/obj/
+Starry/Starry/bin/
+Starry/Starry.Lib/bin/
+Starry/Starry.Lib/obj/

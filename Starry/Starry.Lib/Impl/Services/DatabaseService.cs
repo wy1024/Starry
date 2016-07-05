@@ -1,4 +1,5 @@
 ﻿using Starry.Lib.Contracts;
+using Starry.Lib.Impl.Kol;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -20,19 +21,23 @@ namespace Starry.Lib.Impl.Services
 
         public async Task<IKolEntityDetails> GetKolDetails()
         {
-            using(var connection = new SqlConnection(sqlConnectionString))
+            int someID = 111;
+
+
+            using (var connection = new SqlConnection(sqlConnectionString))
             {
                 await connection.OpenAsync();
 
                 try
                 {
-                    using (var command = new SqlCommand("GetKolDetails"))
+                    using (var command = new SqlCommand("PeopleDetails_Select", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
+                        var param = new SqlParameter("@owner_id", someID);
+                        command.Parameters.Add(param);
 
                         using (var reader = await command.ExecuteReaderAsync())
                         {
-
                         }
                     }
                 }
@@ -47,7 +52,45 @@ namespace Starry.Lib.Impl.Services
 
         public async Task<IEnumerable<IKolEntity>> GetKolList()
         {
-            throw new NotImplementedException();
+            var kolList = new List<IKolEntity>();
+            var kolEntity = new KolEntity();
+
+            try
+            {
+                using (var connection = new SqlConnection(sqlConnectionString))
+                {
+                    await connection.OpenAsync();
+
+
+                    using (var command = new SqlCommand("People_SelectAll", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            if (reader.HasRows)
+                            {
+                                while (reader.Read())
+                                {
+                                    int _id = reader.GetInt32(0);
+                                    int owner_id = reader.GetInt32(1);
+                                    String owner_name = reader.GetString(2);
+                                    Int16 verified = reader.GetInt16(3);
+
+                                    kolEntity.Name = owner_name;
+                                    kolList.Add(kolEntity);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return kolList;
         }
     }
 }

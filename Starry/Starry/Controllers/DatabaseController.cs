@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Web.Http.Results;
 using Starry.Lib.Contracts;
 using Starry.Lib.Impl.Services;
+using System.Collections.Generic;
 
 namespace Starry.Controllers
 {
@@ -25,10 +26,10 @@ namespace Starry.Controllers
 
 
         [Route("api/DatabaseApi/GetKolList")]
-        public async Task<JsonResult<bool>> GetKolList()
+        public async Task<JsonResult<IEnumerable<IKolEntity>>> GetKolList()
         {
             var kolList = await dbservice.GetKolList();
-            return Json(true);
+            return Json(kolList);
         }
     }
 }

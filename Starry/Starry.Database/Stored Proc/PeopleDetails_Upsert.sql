@@ -23,7 +23,7 @@ AS
 					target.analysis = source.analysis,
 					target.profile_pic = source.profile_pic
 		WHEN NOT MATCHED THEN
-			INSERT (weight, avg_audience, analysis, owner_id, crawled_times)
+			INSERT (weight, avg_audience, analysis, owner_id, crawled_times, profile_pic)
 			VALUES (source.weight,
 					source.avg_audience,
 					source.analysis,
