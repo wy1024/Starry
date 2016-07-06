@@ -10,6 +10,8 @@ namespace Starry.Lib.Contracts
     {
         string Name { get; }
 
+        string Owner_Id { get; }
+
         string ProfilePicUrl { get; }
 
         string Fans { get; }

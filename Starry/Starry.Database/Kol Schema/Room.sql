@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[Room]
 (
-	[room_id] INT NOT NULL PRIMARY KEY, 
-    [owner_id] INT NOT NULL,
+	[room_id] NVARCHAR(50) NOT NULL PRIMARY KEY, 
+    [owner_id] NVARCHAR(50) NOT NULL,
 	[online] INT NOT NULL, 
     [category] NVARCHAR(50) NOT NULL, 
     [gift] NVARCHAR(MAX) NOT NULL, 

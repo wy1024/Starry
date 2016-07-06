@@ -19,6 +19,11 @@ namespace Starry.Lib.Impl.Kol
             get; set;
         }
 
+        public string Owner_Id
+        {
+            get; set;
+        }
+
         public string ProfilePicUrl
         {
             get; set;

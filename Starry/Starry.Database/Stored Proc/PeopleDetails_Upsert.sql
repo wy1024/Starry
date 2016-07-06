@@ -2,7 +2,7 @@
     [weight] NVARCHAR(50) NULL, 
     [avg_audience] INT NULL, 
     [analysis] NVARCHAR(MAX) NULL, 
-    [owner_id] INT NOT NULL, 
+    [owner_id] NVARCHAR(50) NOT NULL, 
     [crawled_times] NCHAR(10) NOT NULL,
 	[profile_pic] NVARCHAR(50) NOT NULL
 	);

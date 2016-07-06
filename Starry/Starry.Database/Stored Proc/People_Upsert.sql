@@ -1,5 +1,5 @@
 ﻿CREATE TYPE [dbo].[PeopleEntityType] AS TABLE (
-	[owner_id] INT NOT NULL,
+	[owner_id] NVARCHAR(50) NOT NULL,
     [owner_name] NVARCHAR(50) NOT NULL, 
     [verified] SMALLINT NOT NULL DEFAULT 0
 	);

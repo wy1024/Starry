@@ -53,7 +53,7 @@ namespace Starry.Lib.Impl.Services
         public async Task<IEnumerable<IKolEntity>> GetKolList()
         {
             var kolList = new List<IKolEntity>();
-            var kolEntity = new KolEntity();
+            
 
             try
             {
@@ -72,13 +72,18 @@ namespace Starry.Lib.Impl.Services
                             {
                                 while (reader.Read())
                                 {
-                                    int _id = reader.GetInt32(0);
-                                    int owner_id = reader.GetInt32(1);
-                                    String owner_name = reader.GetString(2);
-                                    Int16 verified = reader.GetInt16(3);
+                                    
+                                    string owner_id = reader.GetString(0);
+                                    string owner_name = reader.GetString(1);
+                                    int avg_audience = reader.GetInt32(2);
+                                    string profile_pic = reader.GetString(3);
 
-                                    kolEntity.Name = owner_name;
-                                    kolList.Add(kolEntity);
+                                    var entity = new KolEntity();
+                                    entity.Name = owner_name;
+                                    entity.Owner_Id = owner_id;
+                                    entity.Fans = avg_audience.ToString();
+                                    entity.ProfilePicUrl = profile_pic;
+                                    kolList.Add(entity);
                                 }
                             }
                         }
