@@ -35,6 +35,19 @@
         </select>
         <br><br>
 
+        目标人群：
+        <select id="demography" name="demography" multiple="multiple" style="width:300px">
+            <option value="trial">10岁以下</option>
+            <option value="low">10-18岁</option>
+            <option value="normal">18-24岁</option>
+            <option value="max">24-35岁</option>
+            <option value="high">35-50岁</option>
+            <option value="high">50岁+</option>
+            <option value="max">男性</option>
+            <option value="max">女性</option>
+        </select>
+        <br><br>
+
         重点标签：
         <select id="tags" name="tags" multiple="multiple" style="width:300px">
             <option value="trial">游戏</option>
@@ -48,6 +61,7 @@
             <option value="max">美食</option>
         </select>
         <br><br>
+
         <input type="submit">
     </form>
 
@@ -57,6 +71,7 @@
             $("#view").select2();
             $("#click").select2();
             $("#tags").select2();
+            $("#demography").select2();
         });
     </script>
 </div>

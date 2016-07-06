@@ -4,8 +4,12 @@ var Starry;
     var CompanySearchController = (function () {
         function CompanySearchController(scope, $http, $q) {
             this.scope = scope;
-            //var userId = $routeParams.code;
+            var self = this;
             this.scope.someText = "dashboard";
+            $http.get('http://starrywebapi.azurewebsites.net/api/DatabaseApi/GetKolList')
+                .then(function (res) {
+                self.scope.kolList = res.data;
+            });
         }
         CompanySearchController.$inject = ['$scope', '$http', '$q'];
         return CompanySearchController;
