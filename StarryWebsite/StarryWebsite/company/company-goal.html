@@ -1,6 +1,7 @@
-﻿
+﻿<div ng-include="'../company/shared-frame.html'"></div>
 
-<div>
+<!--Main Content-->
+<div class="main">
     <p>this is my campaign goal</p>
     <form>
         为这次推广起个名字:<br>
@@ -52,7 +53,8 @@
         <select id="tags" name="tags" multiple="multiple" style="width:300px">
             <option value="trial">游戏</option>
             <option value="low">服装</option>
-            <option value="normal">年轻人</option><option value="max">活力</option>
+            <option value="normal">年轻人</option>
+            <option value="max">活力</option>
             <option value="high">商务</option>
             <option value="max">活力</option>
             <option value="max">女性</option>
@@ -66,7 +68,7 @@
     </form>
 
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $("#length").select2();
             $("#view").select2();
             $("#click").select2();

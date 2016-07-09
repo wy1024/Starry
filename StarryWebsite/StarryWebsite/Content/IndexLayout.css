@@ -225,9 +225,24 @@ input:focus, textarea:focus, *:required:focus{border-color:#DFA94F;}
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#DFA94F; border-color:#DFA94F;}
-.btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#CC9900; border-color:#CC9900;}
+.btnVariatioin1{color:#FFFFFF; background-color:#006699; border-color:#006699;}
+.btnVariatioin2{color:#FFFFFF; background-color:#097054; border-color:#097054;}
+.btn:hover, .btn.inverse, .btnVariatioin1:hover{color:inherit; background-color:transparent; border-color:inherit;}
 
+.kolIcon{
+    color:#CC9900;
+}
+.companyIcon{
+    color:#006699;
+}
+.learnMoreIcon{
+    color:#097054;
+}
+
+.th{
+    text-align:left;
+}
 
 /* Rows */
 .row0{color:#FFFFFF; background-color:#313131;}
