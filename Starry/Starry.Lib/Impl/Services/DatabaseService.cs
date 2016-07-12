@@ -1,11 +1,10 @@
 ﻿using Starry.Lib.Contracts;
 using Starry.Lib.Impl.Kol;
+using Starry.Lib.Impl.util;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Starry.Lib.Impl.Services
@@ -96,6 +95,57 @@ namespace Starry.Lib.Impl.Services
             }
 
             return kolList;
+        }
+
+        public async Task<bool> AddNewCompanyUser(string user_id, string name, string email, string password)
+        {
+            // Hash passwords and generate verification code
+            var passwordHash = new PasswordHashing();
+            var hashedPassword = passwordHash.GenerateHashedPassword(password);
+            var emailVerificationCode = passwordHash.GenerateEmailVerificationCode();
+
+            // Write to SQL 
+            try
+            {
+                using (var connection = new SqlConnection(sqlConnectionString))
+                {
+                    await connection.OpenAsync();
+
+
+                    using (var command = new SqlCommand("CompanyUser_Insert", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        
+                        // Add parameters for insert
+                        command.Parameters.Add(new SqlParameter("@name", name));
+                        command.Parameters.Add(new SqlParameter("@user_id", user_id));
+                        command.Parameters.Add(new SqlParameter("@email", email));
+                        command.Parameters.Add(new SqlParameter("@password_hashed", hashedPassword));
+                        command.Parameters.Add(new SqlParameter("@created_date", DateTime.UtcNow));
+                        command.Parameters.Add(new SqlParameter("@email_verified", Convert.ToInt32(0)));
+                        command.Parameters.Add(new SqlParameter("@email_verification_code", emailVerificationCode));
+
+
+                        int i = await command.ExecuteNonQueryAsync();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        public async Task<bool> LoginCompanyUser(string password)
+        {
+            var passwordHash = new PasswordHashing();
+            // TODO : GET the hashed password and pass in
+
+
+            bool hashedPassword = passwordHash.ComparePassword(password);
+            return hashedPassword;
         }
     }
 }

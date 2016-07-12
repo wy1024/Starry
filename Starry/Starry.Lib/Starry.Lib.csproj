@@ -46,6 +46,7 @@
     <Compile Include="Impl\Kol\KolEntity.cs" />
     <Compile Include="Impl\Kol\KolEntityDetails.cs" />
     <Compile Include="Impl\Services\DatabaseService.cs" />
+    <Compile Include="Impl\util\PasswordHashing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
