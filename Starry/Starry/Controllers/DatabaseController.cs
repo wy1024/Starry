@@ -9,6 +9,7 @@ using System.Web.Http.Results;
 using Starry.Lib.Contracts;
 using Starry.Lib.Impl.Services;
 using System.Collections.Generic;
+using Starry.Lib.Impl.Login;
 
 namespace Starry.Controllers
 {
@@ -24,7 +25,7 @@ namespace Starry.Controllers
             dbservice = new DatabaseService();
         }
 
-
+        [HttpGet]
         [Route("api/DatabaseApi/GetKolList")]
         public async Task<JsonResult<IEnumerable<IKolEntity>>> GetKolList()
         {
@@ -32,10 +33,11 @@ namespace Starry.Controllers
             return Json(kolList);
         }
 
-        [Route("api/DatabaseApi/AddNewCompanyUser/{user_id}/{name}/{email}/{password}")]
-        public async Task<JsonResult<bool>> AddNewCompanyUser(string user_id, string name, string email, string password)
+        [HttpPost]
+        [Route("api/DatabaseApi/AddNewCompanyUser")]
+        public async Task<JsonResult<bool>> AddNewCompanyUser([FromBody]RegisterEntity entity)
         {
-            var res = await dbservice.AddNewCompanyUser(user_id, name, email, password);
+            var res = await dbservice.AddNewCompanyUser(entity.username, entity.name, entity.email, entity.password);
             if (res)
             {
                 // Send verification email
@@ -43,10 +45,11 @@ namespace Starry.Controllers
             return Json(res);
         }
 
-        [Route("api/DatabaseApi/LoginCompanyUser/{password}")]
-        public async Task<JsonResult<bool>> LoginCompanyUser(string password)
+        [HttpPost]
+        [Route("api/DatabaseApi/LoginCompanyUser")]
+        public async Task<JsonResult<bool>> LoginCompanyUser([FromBody]LoginEntity entity)
         {
-            var res = await dbservice.LoginCompanyUser(password);
+            var res = await dbservice.LoginCompanyUser(entity.username, entity.password);
             return Json(res);
         }
     }

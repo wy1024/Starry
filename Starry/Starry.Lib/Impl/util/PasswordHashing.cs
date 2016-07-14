@@ -25,10 +25,15 @@ namespace Starry.Lib.Impl.util
             return savedPasswordHash;
         }
 
-        public bool ComparePassword(string password)
+        /// <summary>
+        /// Returns true if password is correct
+        /// </summary>
+        /// <param name="password"></param>
+        /// <param name="hashedPassword"></param>
+        /// <returns></returns>
+        public bool ComparePassword(string password, string hashedPassword)
         {
-            string savedPasswordHash = "GcbI35PWTQyLF48yvPaWyJK403+Th7G72Xd/Xb62UARsqVKd";
-            byte[] hashBytes = Convert.FromBase64String(savedPasswordHash);
+            byte[] hashBytes = Convert.FromBase64String(hashedPassword);
             // Get the salt
             byte[] salt = new byte[16];
             Array.Copy(hashBytes, 0, salt, 0, 16);

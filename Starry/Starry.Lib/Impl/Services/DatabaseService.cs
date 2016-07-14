@@ -99,6 +99,8 @@ namespace Starry.Lib.Impl.Services
 
         public async Task<bool> AddNewCompanyUser(string user_id, string name, string email, string password)
         {
+            // Need to check if user name exists
+            
             // Hash passwords and generate verification code
             var passwordHash = new PasswordHashing();
             var hashedPassword = passwordHash.GenerateHashedPassword(password);
@@ -138,14 +140,42 @@ namespace Starry.Lib.Impl.Services
             return true;
         }
 
-        public async Task<bool> LoginCompanyUser(string password)
+        public async Task<bool> LoginCompanyUser(string username, string password)
         {
             var passwordHash = new PasswordHashing();
-            // TODO : GET the hashed password and pass in
+
+            try
+            {
+                using (var connection = new SqlConnection(sqlConnectionString))
+                {
+                    await connection.OpenAsync();
 
 
-            bool hashedPassword = passwordHash.ComparePassword(password);
-            return hashedPassword;
+                    using (var command = new SqlCommand("CompanyUser_Select", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@username", username);
+
+                        using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            if (reader.HasRows)
+                            {
+                                reader.Read();
+                                string password_hashed = reader.GetString(0);
+                                bool isPasswordCorrect = passwordHash.ComparePassword(password, password_hashed);
+                                return isPasswordCorrect;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return false;
         }
     }
 }

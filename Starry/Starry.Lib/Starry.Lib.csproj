@@ -43,8 +43,12 @@
     <Compile Include="Contracts\IDatabaseService.cs" />
     <Compile Include="Contracts\IKolEntity.cs" />
     <Compile Include="Contracts\IKolEntityDetails.cs" />
+    <Compile Include="Contracts\ILoginEntity.cs" />
+    <Compile Include="Contracts\IRegisterEntity.cs" />
     <Compile Include="Impl\Kol\KolEntity.cs" />
     <Compile Include="Impl\Kol\KolEntityDetails.cs" />
+    <Compile Include="Impl\Login\LoginEntity.cs" />
+    <Compile Include="Impl\Login\RegisterEntity.cs" />
     <Compile Include="Impl\Services\DatabaseService.cs" />
     <Compile Include="Impl\util\PasswordHashing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
