@@ -16,19 +16,16 @@
     <script src="../js/Starry/Services/authentication.service.js"></script>
     <script src="../js/Starry/Services/flash.service.js"></script>
     <!-- Real user service that uses an api -->
-    <!--<script src="../js/Starry/Services/user.service.js"></script>-->
+    <script src="../js/starry/services/user.service.js"></script>
+
     <!-- Fake user service for demo that uses local storage -->
-    <script src="../js/Starry/Services/user.service.local-storage.js"></script>
+    <!--<script src="../js/Starry/Services/user.service.local-storage.js"></script>-->
+
     <script src="home.controller.js"></script>
     <script src="login.controller.js"></script>
     <script src="register.controller.js"></script>
 
-
-
     <!--Library-->
-    <!--<script src="../Scripts/jquery-2.2.3.min.js"></script>
-    <script src="../Scripts/angular.min.js"></script>
-    <script src="../Scripts/angular-route.min.js"></script>-->
     <script src="../Scripts/Chart.min.js"></script>
     <script src="../Scripts/angular-chart.min.js"></script>
     <script src="../Scripts/select2.min.js"></script>
@@ -47,22 +44,5 @@
 <body>
     <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
     <div ng-view></div>
-    <!--<div class="jumbotron">
-        <div class="container">
-            <div class="col-sm-8 col-sm-offset-2">
-                <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
-                <div ng-view></div>
-            </div>
-        </div>
-    </div>
-    <div class="credits text-center">
-        <p>
-            <a href="http://jasonwatmore.com/post/2015/03/10/AngularJS-User-Registration-and-Login-Example.aspx">AngularJS User Registration and Login Example</a>
-        </p>
-        <p>
-            <a href="http://jasonwatmore.com">JasonWatmore.com</a>
-        </p>
-    </div>-->
-
 </body>
 </html>
