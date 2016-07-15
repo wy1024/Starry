@@ -19,11 +19,13 @@
         function login() {
             vm.dataLoading = true;
             AuthenticationService.Login(vm.username, vm.password, function (response) {
-                if (response) {
+                console.log(response);
+                if (response === 'true') {
                     AuthenticationService.SetCredentials(vm.username, vm.password);
                     $location.path('/');
                 } else {
-                    FlashService.Error(response.message);
+                    // false
+                    FlashService.Error('用户名或密码错误');
                     vm.dataLoading = false;
                 }
             });

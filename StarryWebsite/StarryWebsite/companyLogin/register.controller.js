@@ -15,11 +15,12 @@
             vm.dataLoading = true;
             UserService.Create(vm.user)
                 .then(function (response) {
+                    console.log(response);
                     if (response.success) {
-                        FlashService.Success('Registration successful', true);
+                        FlashService.Success('注册成功', true);
                         $location.path('/login');
                     } else {
-                        FlashService.Error(response.message);
+                        FlashService.Error('用户名已存在');
                         vm.dataLoading = false;
                     }
                 });

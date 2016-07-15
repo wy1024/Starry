@@ -5,8 +5,8 @@
         .module('Starry')
         .factory('UserService', UserService);
 
-    UserService.$inject = ['$http'];
-    function UserService($http) {
+    UserService.$inject = ['$http', '$q', '$timeout'];
+    function UserService($http, $q, $timeout) {
         var service = {};
 
         service.GetAll = GetAll;
@@ -29,14 +29,30 @@
         }
 
         function GetByUsername(username) {
-            return $http.get(apiUrl + '/api/users/' + username).then(handleSuccess, handleError('Error getting user by username'));
+            return $http.get('http://localhost:59208/' + 'api/DatabaseApi/GetCompanyUserByUsername/' + username).then(handleSuccess, handleError('Error getting user by username'));
         }
 
         function Create(user) {
-            console.log(user);
-            return $http.post('http://localhost:59208/' + 'api/DatabaseApi/AddNewCompanyUser', user).then(handleSuccess, handleError('Error creating user'));
+            var deferred = $q.defer();
+
+            var promise =
+                $timeout(function () {
+                    GetByUsername(user.username)
+                        .then(function (userExists) {
+                            if (userExists === 'true') {
+                                deferred.resolve({ success: false, message: 'Username "' + user.username + '" is already taken' });
+                            } else {
+                                return $http.post('http://localhost:59208/' + 'api/DatabaseApi/AddNewCompanyUser', user);
+                            }
+                        }).then(function (response2) {
+                            deferred.resolve({ success: true });
+                        });
+                }, 1000);
+
+            return deferred.promise;            
         }
 
+        //TODO
         function Update(user) {
             return $http.put(apiUrl + '/api/users/' + user.id, user).then(handleSuccess, handleError('Error updating user'));
         }
@@ -46,7 +62,6 @@
         }
 
         // private functions
-
         function handleSuccess(res) {
             return res.data;
         }

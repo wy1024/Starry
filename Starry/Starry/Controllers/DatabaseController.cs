@@ -33,6 +33,14 @@ namespace Starry.Controllers
             return Json(kolList);
         }
 
+        [HttpGet]
+        [Route("api/DatabaseApi/GetCompanyUserByUsername/{username}")]
+        public async Task<JsonResult<bool>> GetCompanyUserByUsername(string username)
+        {
+            bool userExists = await dbservice.GetCompanyUserByUsername(username);
+            return Json(userExists);
+        }
+
         [HttpPost]
         [Route("api/DatabaseApi/AddNewCompanyUser")]
         public async Task<JsonResult<bool>> AddNewCompanyUser([FromBody]RegisterEntity entity)
