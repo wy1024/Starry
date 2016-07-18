@@ -9,7 +9,7 @@ module Starry {
         $routeProvider
             .when('/', {
                 templateUrl: "../company/company-dashboard.html",
-                controller: "CompanySearchController as vm"
+                controller: "CompanyDashboardController as vm"
             })
             .when('/login', {
                 controller: 'LoginController',
@@ -23,12 +23,12 @@ module Starry {
             })
             .when("/dashboard", {
                 templateUrl: "../company/company-dashboard.html",
-                controller: "CompanySearchController as vm"
+                controller: "CompanyDashboardController as vm"
             })
             .when('/goal', {
                 templateUrl: "../company/company-goal.html",
                 //templateUrl: "companyViews/company-goal.html",
-                controller: "CompanySearchController as vm"
+                controller: "CompanyGoalController as vm"
             })
             .when("/search", {
                 templateUrl: "../company/company-search.html",

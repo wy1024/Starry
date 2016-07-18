@@ -3,12 +3,12 @@
 <!--Main Content-->
 <div class="main">
     <p>this is my campaign goal</p>
-    <form>
+    <form ng-submit="vm.submit()">
         为这次推广起个名字:<br>
-        <input type="text"><br>
+        <input type="text" name="campaignName" ng-model="campaignName"><br>
 
         推广期长度：
-        <select id="length" name="length">
+        <select id="length" name="length" ng-model="length">
             <option value="trial"><3天</option>
             <option value="low"><2周</option>
             <option value="normal"><1个月</option>
@@ -17,7 +17,7 @@
         <br><br>
 
         人数浏览量目标：
-        <select id="view" name="view">
+        <select id="view" name="view" ng-model="view">
             <option value="trial">1000</option>
             <option value="low">1000 - 9999</option>
             <option value="normal">10000 - 99999</option>
@@ -27,7 +27,7 @@
         <br><br>
 
         点击量目标：
-        <select id="click" name="click">
+        <select id="click" name="click" ng-model="click">
             <option value="trial">100</option>
             <option value="low">100 - 999</option>
             <option value="normal">1000 - 9999</option>
@@ -37,7 +37,7 @@
         <br><br>
 
         目标人群：
-        <select id="demography" name="demography" multiple="multiple" style="width:300px">
+        <select id="demography" name="demography" multiple="multiple" style="width:300px" ng-model="demography">
             <option value="trial">10岁以下</option>
             <option value="low">10-18岁</option>
             <option value="normal">18-24岁</option>
@@ -50,7 +50,7 @@
         <br><br>
 
         重点标签：
-        <select id="tags" name="tags" multiple="multiple" style="width:300px">
+        <select id="tags" name="tags" multiple="multiple" style="width:300px" ng-model="tags">
             <option value="trial">游戏</option>
             <option value="low">服装</option>
             <option value="normal">年轻人</option>
@@ -64,7 +64,7 @@
         </select>
         <br><br>
 
-        <input type="submit">
+        <button type="submit">提交</button>
     </form>
 
     <script type="text/javascript">

@@ -209,5 +209,39 @@ namespace Starry.Lib.Impl.Services
 
             return false;
         }
+
+        public async Task<string> GetCompanyNameByUsername(string username)
+        {
+            try
+            {
+                using (var connection = new SqlConnection(sqlConnectionString))
+                {
+                    await connection.OpenAsync();
+
+
+                    using (var command = new SqlCommand("CompanyUser_Select", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@username", username);
+
+                        using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            if (reader.HasRows)
+                            {
+                                reader.Read();
+                                string name = reader.GetString(1);
+                                return name;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return "";
+        }
     }
 }

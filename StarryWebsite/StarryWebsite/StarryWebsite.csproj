@@ -186,6 +186,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="js\Starry\app.module.ts" />
+    <TypeScriptCompile Include="js\Starry\Controller\company-dashboard.ts" />
+    <TypeScriptCompile Include="js\Starry\Controller\company-goal.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\company-search.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\company-track.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />

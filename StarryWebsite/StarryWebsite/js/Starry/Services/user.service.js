@@ -12,6 +12,7 @@
         service.GetAll = GetAll;
         service.GetById = GetById;
         service.GetByUsername = GetByUsername;
+        service.GetNameByUsername = GetNameByUsername;
         service.Create = Create;
         service.Update = Update;
         service.Delete = Delete;
@@ -28,8 +29,13 @@
             return $http.get(apiUrl + '/api/users/' + id).then(handleSuccess, handleError('Error getting user by id'));
         }
 
+        // Checks whether username exists or not
         function GetByUsername(username) {
             return $http.get('http://localhost:59208/' + 'api/DatabaseApi/GetCompanyUserByUsername/' + username).then(handleSuccess, handleError('Error getting user by username'));
+        }
+
+        function GetNameByUsername(username) {
+            return $http.get('http://localhost:59208/' + 'api/DatabaseApi/GetCompanyNameByUsername/' + username).then(handleSuccess, handleError('Error getting user by username'));
         }
 
         function Create(user) {

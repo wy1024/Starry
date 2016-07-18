@@ -17,5 +17,7 @@ namespace Starry.Lib.Contracts
         Task<bool> LoginCompanyUser(string username, string password);
 
         Task<bool> GetCompanyUserByUsername(string username);
+
+        Task<string> GetCompanyNameByUsername(string username);
     }
 }
