@@ -243,5 +243,38 @@ namespace Starry.Lib.Impl.Services
 
             return "";
         }
+
+        public async Task<bool> AddNewCompanyGoal(ICompanyGoal goal)
+        {
+            // Write to SQL 
+            try
+            {
+                using (var connection = new SqlConnection(sqlConnectionString))
+                {
+                    await connection.OpenAsync();
+
+                    using (var command = new SqlCommand("CompanyGoal_Insert", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        // Add parameters for insert
+                        command.Parameters.Add(new SqlParameter("@company_user_id", goal.CompanyUserId));
+                        command.Parameters.Add(new SqlParameter("@campaign_name", goal.CampaignName));
+                        command.Parameters.Add(new SqlParameter("@view", goal.View));
+                        command.Parameters.Add(new SqlParameter("@click", goal.Click));
+                        command.Parameters.Add(new SqlParameter("@demography", goal.Demography);
+                        command.Parameters.Add(new SqlParameter("@tags", goal.tags);
+
+                        int i = await command.ExecuteNonQueryAsync();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }

@@ -68,5 +68,17 @@ namespace Starry.Controllers
             var res = await dbservice.LoginCompanyUser(entity.username, entity.password);
             return Json(res);
         }
+
+        [HttpPost]
+        [Route("api/DatabaseApi/AddNewCompanyGoal")]
+        public async Task<JsonResult<bool>> AddNewCompanyGoal([FromBody]ICompanyGoal goal)
+        {
+            var res = await dbservice.AddNewCompanyGoal(goal);
+            if (res)
+            {
+                // Send verification email
+            }
+            return Json(res);
+        }
     }
 }

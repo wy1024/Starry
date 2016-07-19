@@ -19,5 +19,7 @@ namespace Starry.Lib.Contracts
         Task<bool> GetCompanyUserByUsername(string username);
 
         Task<string> GetCompanyNameByUsername(string username);
+
+        Task<bool> AddNewCompanyGoal(ICompanyGoal goal);
     }
 }
