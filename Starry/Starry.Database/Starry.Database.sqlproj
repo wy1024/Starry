@@ -60,6 +60,7 @@
     <Folder Include="Stored Proc" />
     <Folder Include="Kol Schema" />
     <Folder Include="Login" />
+    <Folder Include="Company Schema" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Stored Proc\People_Upsert.sql" />
@@ -73,6 +74,8 @@
     <Build Include="Login\CompanyUser.sql" />
     <Build Include="Stored Proc\CompanyUser_Insert.sql" />
     <Build Include="Stored Proc\CompanyUser_Select.sql" />
+    <Build Include="Company Schema\Goal.sql" />
+    <Build Include="Stored Proc\CompanyGoal_Insert.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Starry.Database.refactorlog" />

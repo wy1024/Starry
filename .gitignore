@@ -16,3 +16,5 @@ Starry/Starry/bin/
 Starry/Starry.Lib/bin/
 Starry/Starry.Lib/obj/
 Starry/Starry.Database/bin/Debug/
+*.idea
+*.refactorlog

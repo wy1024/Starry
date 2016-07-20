@@ -40,11 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\ICompanyGoal.cs" />
     <Compile Include="Contracts\IDatabaseService.cs" />
     <Compile Include="Contracts\IKolEntity.cs" />
     <Compile Include="Contracts\IKolEntityDetails.cs" />
     <Compile Include="Contracts\ILoginEntity.cs" />
     <Compile Include="Contracts\IRegisterEntity.cs" />
+    <Compile Include="Impl\Company\CompanyGoal.cs" />
     <Compile Include="Impl\Kol\KolEntity.cs" />
     <Compile Include="Impl\Kol\KolEntityDetails.cs" />
     <Compile Include="Impl\Login\LoginEntity.cs" />
