@@ -6,5 +6,6 @@
     [view] NVARCHAR(50) NOT NULL, 
     [click] NVARCHAR(50) NOT NULL, 
     [demography] NVARCHAR(200) NOT NULL, 
-    [tags] NVARCHAR(200) NOT NULL
+    [tags] NVARCHAR(200) NOT NULL, 
+    [length] NVARCHAR(50) NOT NULL
 )

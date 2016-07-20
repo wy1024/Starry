@@ -29,7 +29,12 @@ namespace Starry.Lib.Impl.Company
             get; set;
         }
 
-        public string tags
+        public string Length
+        {
+            get; set;
+        }
+
+        public string Tags
         {
             get; set;
         }

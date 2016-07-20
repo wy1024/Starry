@@ -18,6 +18,8 @@ namespace Starry.Lib.Contracts
 
         string Demography { get; }
 
-        string tags { get; }
+        string Tags { get; }
+
+        string Length { get; }
     }
 }

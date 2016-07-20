@@ -10,6 +10,7 @@ using Starry.Lib.Contracts;
 using Starry.Lib.Impl.Services;
 using System.Collections.Generic;
 using Starry.Lib.Impl.Login;
+using Starry.Lib.Impl.Company;
 
 namespace Starry.Controllers
 {
@@ -71,7 +72,7 @@ namespace Starry.Controllers
 
         [HttpPost]
         [Route("api/DatabaseApi/AddNewCompanyGoal")]
-        public async Task<JsonResult<bool>> AddNewCompanyGoal([FromBody]ICompanyGoal goal)
+        public async Task<JsonResult<bool>> AddNewCompanyGoal([FromBody]CompanyGoal goal)
         {
             var res = await dbservice.AddNewCompanyGoal(goal);
             if (res)

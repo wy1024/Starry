@@ -263,7 +263,8 @@ namespace Starry.Lib.Impl.Services
                         command.Parameters.Add(new SqlParameter("@view", goal.View));
                         command.Parameters.Add(new SqlParameter("@click", goal.Click));
                         command.Parameters.Add(new SqlParameter("@demography", goal.Demography));
-                        command.Parameters.Add(new SqlParameter("@tags", goal.tags));
+                        command.Parameters.Add(new SqlParameter("@tags", goal.Tags));
+                        command.Parameters.Add(new SqlParameter("@length", goal.Length));
 
                         int i = await command.ExecuteNonQueryAsync();
                     }
