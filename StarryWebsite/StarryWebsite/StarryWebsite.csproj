@@ -26,6 +26,7 @@
     <Content Include="company\company-history.html" />
     <Content Include="company\shared-frame.html" />
     <Content Include="Content\angular-chart.css" />
+    <Content Include="Content\animate.css" />
     <Content Include="Content\company\company-search.css" />
     <Content Include="Content\select2.min.css" />
     <Content Include="img\网红\wh1.jpg" />
@@ -43,6 +44,7 @@
     <Content Include="companyLogin\login.view.html" />
     <Content Include="companyLogin\register.view.html" />
     <Content Include="companyLogin\register.controller.js" />
+    <Content Include="learnMore\index.html" />
     <Content Include="Scripts\angular-chart.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-route.js" />
@@ -131,6 +133,7 @@
     <Content Include="Scripts\jquery.backtotop.js" />
     <Content Include="Scripts\jquery.mobilemenu.js" />
     <Content Include="Scripts\jquery.placeholder.min.js" />
+    <Content Include="Scripts\wow.js" />
     <Content Include="search.html" />
     <Content Include="js\search\fastclick.min.js" />
     <Content Include="js\search\Gruntfile.js" />
