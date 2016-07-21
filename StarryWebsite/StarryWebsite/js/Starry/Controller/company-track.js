@@ -1,4 +1,3 @@
-/// <reference path="../../../scripts/typings/_all.d.ts" />
 var Starry;
 (function (Starry) {
     var CompanyTrackController = (function () {
@@ -26,4 +25,3 @@ var Starry;
     }());
     App.controller("CompanyTrackController", CompanyTrackController);
 })(Starry || (Starry = {}));
-//# sourceMappingURL=company-track.js.map

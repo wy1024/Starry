@@ -43,7 +43,8 @@ module Starry {
             goal["Demography"] = JSON.stringify(this.scope.demography);
             goal["Tags"] = JSON.stringify(this.scope.tags);
             console.log(goal);
-            this.scope.$http.post('http://localhost:59208/' + 'api/DatabaseApi/AddNewCompanyGoal', goal);
+            //this.scope.$http.post('http://localhost:59208/' + 'api/DatabaseApi/AddNewCompanyGoal', goal);
+            this.scope.$http.post('http://starrywebapi.azurewebsites.net/' + 'api/DatabaseApi/AddNewCompanyGoal', goal);
         }
 
     }

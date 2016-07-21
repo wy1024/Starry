@@ -34,7 +34,8 @@
 
             /* Use this for real authentication
              ----------------------------------------------*/
-            $http.post('http://localhost:59208/' + 'api/DatabaseApi/LoginCompanyUser', { username: username, password: password })
+            //$http.post('http://localhost:59208/' + 'api/DatabaseApi/LoginCompanyUser', { username: username, password: password })
+            $http.post('http://starrywebapi.azurewebsites.net/' + 'api/DatabaseApi/LoginCompanyUser', { username: username, password: password })
                 .success(function (response) {
                     callback(response);
                 });

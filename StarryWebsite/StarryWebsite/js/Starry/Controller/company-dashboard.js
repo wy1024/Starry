@@ -1,4 +1,3 @@
-/// <reference path="../../../scripts/typings/_all.d.ts" />
 var Starry;
 (function (Starry) {
     var CompanyDashboardController = (function () {
@@ -23,4 +22,3 @@ var Starry;
     }());
     App.controller("CompanyDashboardController", CompanyDashboardController);
 })(Starry || (Starry = {}));
-//# sourceMappingURL=company-dashboard.js.map

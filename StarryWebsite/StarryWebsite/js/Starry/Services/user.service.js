@@ -19,8 +19,6 @@
 
         return service;
 
-        var apiUrl = 'http://localhost:59208/';
-
         function GetAll() {
             return $http.get(apiUrl + '/api/users').then(handleSuccess, handleError('Error getting all users'));
         }
@@ -31,11 +29,14 @@
 
         // Checks whether username exists or not
         function GetByUsername(username) {
-            return $http.get('http://localhost:59208/' + 'api/DatabaseApi/GetCompanyUserByUsername/' + username).then(handleSuccess, handleError('Error getting user by username'));
+            //return $http.get('http://localhost:59208/' + 'api/DatabaseApi/GetCompanyUserByUsername/' + username).then(handleSuccess, handleError('Error getting user by username'));
+            return $http.get('http://starrywebapi.azurewebsites.net/' + 'api/DatabaseApi/GetCompanyUserByUsername/' + username).then(handleSuccess, handleError('Error getting user by username'));
+            
         }
 
         function GetNameByUsername(username) {
-            return $http.get('http://localhost:59208/' + 'api/DatabaseApi/GetCompanyNameByUsername/' + username).then(handleSuccess, handleError('Error getting user by username'));
+            //return $http.get('http://localhost:59208/' + 'api/DatabaseApi/GetCompanyNameByUsername/' + username).then(handleSuccess, handleError('Error getting user by username'));
+            return $http.get('http://starrywebapi.azurewebsites.net/' + 'api/DatabaseApi/GetCompanyNameByUsername/' + username).then(handleSuccess, handleError('Error getting user by username'));
         }
 
         function Create(user) {
@@ -48,7 +49,9 @@
                             if (userExists === 'true') {
                                 deferred.resolve({ success: false, message: 'Username "' + user.username + '" is already taken' });
                             } else {
-                                return $http.post('http://localhost:59208/' + 'api/DatabaseApi/AddNewCompanyUser', user);
+                                //return $http.post('http://localhost:59208/' + 'api/DatabaseApi/AddNewCompanyUser', user);
+                                return $http.post('http://starrywebapi.azurewebsites.net/' + 'api/DatabaseApi/AddNewCompanyUser', user);
+                                
                             }
                         }).then(function (response2) {
                             deferred.resolve({ success: true });
