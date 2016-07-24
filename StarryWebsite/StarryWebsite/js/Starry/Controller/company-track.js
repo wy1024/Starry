@@ -1,3 +1,4 @@
+/// <reference path="../../../scripts/typings/_all.d.ts" />
 var Starry;
 (function (Starry) {
     var CompanyTrackController = (function () {
@@ -22,6 +23,7 @@ var Starry;
         }
         CompanyTrackController.$inject = ['$scope', '$http', '$q'];
         return CompanyTrackController;
-    }());
+    })();
     App.controller("CompanyTrackController", CompanyTrackController);
 })(Starry || (Starry = {}));
+//# sourceMappingURL=company-track.js.map

@@ -50,6 +50,10 @@ module Starry {
                 templateUrl: "../company/company-help.html",
                 controller: "CompanySearchController as vm"
             })
+            .when("/pol", {
+                templateUrl: "../company/company-pol.html",
+                controller: "CompanyPOLController as vm"
+            })
             //.when("/storeDetails/:storeId", {
             //    templateUrl: "/templates/storeDetailView.html",
             //    controller: "StoreDetailCtrl as vm"
