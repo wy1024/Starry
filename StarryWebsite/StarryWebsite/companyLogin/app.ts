@@ -27,7 +27,6 @@ module Starry {
             })
             .when('/goal', {
                 templateUrl: "../company/company-goal.html",
-                //templateUrl: "companyViews/company-goal.html",
                 controller: "CompanyGoalController as vm"
             })
             .when("/search", {
@@ -50,11 +49,10 @@ module Starry {
                 templateUrl: "../company/company-help.html",
                 controller: "CompanySearchController as vm"
             })
-            //.when("/storeDetails/:storeId", {
-            //    templateUrl: "/templates/storeDetailView.html",
-            //    controller: "StoreDetailCtrl as vm"
-            //})
-
+            .when("/searchDetails/:kolId", {
+                templateUrl: "../company/company-search-details.html",
+                controller: "CompanySearchDetailsController as vm"
+            })
             .otherwise({ redirectTo: '/login' });
     }
 

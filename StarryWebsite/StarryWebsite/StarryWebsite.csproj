@@ -24,6 +24,7 @@
   <ItemGroup>
     <Content Include="company\company-help.html" />
     <Content Include="company\company-history.html" />
+    <Content Include="company\company-search-details.html" />
     <Content Include="company\shared-frame.html" />
     <Content Include="Content\angular-chart.css" />
     <Content Include="Content\animate.css" />
@@ -194,6 +195,7 @@
     <TypeScriptCompile Include="js\Starry\app.module.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\company-dashboard.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\company-goal.ts" />
+    <TypeScriptCompile Include="js\Starry\Controller\company-search-details.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\company-search.ts" />
     <TypeScriptCompile Include="js\Starry\Controller\company-track.ts" />
     <TypeScriptCompile Include="Scripts\typings\angularjs\angular-animate.d.ts" />
