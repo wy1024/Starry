@@ -7,12 +7,12 @@ var Starry;
     function config($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
-            templateUrl: "../company/company-dashboard.html",
-            controller: "CompanyDashboardController as vm"
+            templateUrl: "../kol/kol-dashboard.html",
+            controller: "KolDashboardController as vm"
         })
             .when('/login', {
-            controller: 'LoginController',
-            templateUrl: 'login.view.html',
+            controller: 'KolDashboardController',
+            templateUrl: '../kol/kol-dashboard.html',
             controllerAs: 'vm'
         })
             .when('/register', {
@@ -21,38 +21,23 @@ var Starry;
             controllerAs: 'vm'
         })
             .when("/dashboard", {
-            templateUrl: "../company/company-dashboard.html",
-            controller: "CompanyDashboardController as vm"
+            templateUrl: "../kol/company-dashboard.html",
+            controller: "KolDashboardController as vm"
         })
-            .when('/goal', {
-            templateUrl: "../company/company-goal.html",
-            controller: "CompanyGoalController as vm"
-        })
-            .when("/search", {
-            templateUrl: "../company/company-search.html",
-            controller: "CompanySearchController as vm"
-        })
-            .when("/select", {
-            templateUrl: "../company/company-select.html",
-            controller: "CompanySearchController as vm"
-        })
-            .when("/track", {
-            templateUrl: "../company/company-track.html",
-            controller: "CompanyTrackController as vm"
+            .when('/progress', {
+            templateUrl: "../kol/kol-progress.html",
+            //templateUrl: "companyViews/company-goal.html",
+            controller: "KolProgressController as vm"
         })
             .when("/history", {
-            templateUrl: "../company/company-history.html",
-            controller: "CompanySearchController as vm"
+            templateUrl: "../kol/kol-history.html",
+            controller: "KolHistoryController as vm"
         })
             .when("/help", {
-            templateUrl: "../company/company-help.html",
-            controller: "CompanySearchController as vm"
+            templateUrl: "../kol/kol-help.html",
+            controller: "KolSearchController as vm"
         })
-            .when("/searchDetails/:kolId", {
-            templateUrl: "../company/company-search-details.html",
-            controller: "CompanySearchDetailsController as vm"
-        })
-            .otherwise({ redirectTo: '/login' });
+            .otherwise({ redirectTo: '/' });
     }
     run.$inject = ['$rootScope', '$location', '$cookieStore', '$http'];
     function run($rootScope, $location, $cookieStore, $http) {

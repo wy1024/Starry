@@ -13,7 +13,7 @@ var Starry;
         }
         CompanySearchDetailsController.$inject = ['$scope', '$http', '$q'];
         return CompanySearchDetailsController;
-    }());
+    })();
     App.controller("CompanySearchDetailsController", CompanySearchDetailsController);
 })(Starry || (Starry = {}));
 //# sourceMappingURL=company-search-details.js.map
