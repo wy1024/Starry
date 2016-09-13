@@ -76,6 +76,9 @@
     <Build Include="Stored Proc\CompanyUser_Select.sql" />
     <Build Include="Company Schema\Goal.sql" />
     <Build Include="Stored Proc\CompanyGoal_Insert.sql" />
+    <Build Include="Login\KolUser.sql" />
+    <Build Include="Stored Proc\KolUser_Select.sql" />
+    <Build Include="Stored Proc\KolUser_Insert.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Starry.Database.refactorlog" />
