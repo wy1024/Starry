@@ -140,6 +140,55 @@ namespace Starry.Lib.Impl.Services
             return true;
         }
 
+        public async Task<bool> AddNewKolUser(string user_id, string name, string email, string password)
+        {
+            // Need to check if user name exists
+
+            // Hash passwords and generate verification code
+            var passwordHash = new PasswordHashing();
+            var hashedPassword = passwordHash.GenerateHashedPassword(password);
+            var emailVerificationCode = passwordHash.GenerateEmailVerificationCode();
+
+            // Write to SQL 
+            try
+            {
+                using (var connection = new SqlConnection(sqlConnectionString))
+                {
+                    await connection.OpenAsync();
+
+
+                    using (var command = new SqlCommand("KolUser_Insert", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        // Add parameters for insert
+                        command.Parameters.Add(new SqlParameter("@name", name));
+                        command.Parameters.Add(new SqlParameter("@user_id", user_id));
+                        command.Parameters.Add(new SqlParameter("@email", email));
+                        command.Parameters.Add(new SqlParameter("@password_hashed", hashedPassword));
+                        command.Parameters.Add(new SqlParameter("@created_date", DateTime.UtcNow));
+                        command.Parameters.Add(new SqlParameter("@email_verified", Convert.ToInt32(0)));
+                        command.Parameters.Add(new SqlParameter("@email_verification_code", emailVerificationCode));
+
+
+                        int i = await command.ExecuteNonQueryAsync();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        /// <summary>
+        /// Password verification and login the company user based on username and password
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public async Task<bool> LoginCompanyUser(string username, string password)
         {
             var passwordHash = new PasswordHashing();
@@ -178,6 +227,55 @@ namespace Starry.Lib.Impl.Services
             return false;
         }
 
+        /// <summary>
+        /// Password verification and login the kol user based on username and password
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
+        public async Task<bool> LoginKolUser(string username, string password)
+        {
+            var passwordHash = new PasswordHashing();
+
+            try
+            {
+                using (var connection = new SqlConnection(sqlConnectionString))
+                {
+                    await connection.OpenAsync();
+
+
+                    using (var command = new SqlCommand("KolUser_Select", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                        command.Parameters.AddWithValue("@username", username);
+
+                        using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            if (reader.HasRows)
+                            {
+                                reader.Read();
+                                string password_hashed = reader.GetString(0);
+                                bool isPasswordCorrect = passwordHash.ComparePassword(password, password_hashed);
+                                return isPasswordCorrect;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Checks whether this user_id exists already in company user.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
         public async Task<bool> GetCompanyUserByUsername(string username)
         {
             try
@@ -210,6 +308,48 @@ namespace Starry.Lib.Impl.Services
             return false;
         }
 
+        /// <summary>
+        /// Checks whether this user_id exists already in kol user.
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
+        public async Task<bool> GetKolUserByUsername(string username)
+        {
+            try
+            {
+                using (var connection = new SqlConnection(sqlConnectionString))
+                {
+                    await connection.OpenAsync();
+
+
+                    using (var command = new SqlCommand("KolUser_Select", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@username", username);
+
+                        using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            if (reader.HasRows)
+                            {
+                                return true;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Return the company name based on the user_id
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
         public async Task<string> GetCompanyNameByUsername(string username)
         {
             try
@@ -220,6 +360,45 @@ namespace Starry.Lib.Impl.Services
 
 
                     using (var command = new SqlCommand("CompanyUser_Select", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@username", username);
+
+                        using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            if (reader.HasRows)
+                            {
+                                reader.Read();
+                                string name = reader.GetString(1);
+                                return name;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            return "";
+        }
+
+        /// <summary>
+        /// Return the kol name based on the user_id
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
+        public async Task<string> GetKolNameByUsername(string username)
+        {
+            try
+            {
+                using (var connection = new SqlConnection(sqlConnectionString))
+                {
+                    await connection.OpenAsync();
+
+
+                    using (var command = new SqlCommand("KolUser_Select", connection))
                     {
                         command.CommandType = CommandType.StoredProcedure;
                         command.Parameters.AddWithValue("@username", username);
