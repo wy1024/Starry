@@ -12,12 +12,12 @@ module Starry {
                 controller: "KolDashboardController as vm"
             })
             .when('/login', {
-                controller: 'KolDashboardController',
-                templateUrl: '../kol/kol-dashboard.html',
+                controller: 'KolLoginController',
+                templateUrl: 'login.view.html',
                 controllerAs: 'vm'
             })
             .when('/register', {
-                controller: 'RegisterController',
+                controller: 'KolRegisterController',
                 templateUrl: 'register.view.html',
                 controllerAs: 'vm'
             })
@@ -27,7 +27,6 @@ module Starry {
             })
             .when('/progress', {
                 templateUrl: "../kol/kol-progress.html",
-                //templateUrl: "companyViews/company-goal.html",
                 controller: "KolProgressController as vm"
             })
             .when("/history", {

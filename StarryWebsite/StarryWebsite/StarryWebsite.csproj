@@ -36,10 +36,12 @@
     <Content Include="img\网红\wh1.jpg" />
     <Content Include="img\网红\wh2.jpg" />
     <Content Include="img\网红\wh3.jpg" />
-    <Content Include="js\Starry\Services\authentication.service.js" />
     <Content Include="js\Starry\Services\flash.service.js" />
+    <Content Include="js\Starry\Services\kol.authentication.service.js" />
+    <Content Include="js\Starry\Services\authentication.service.js" />
+    <Content Include="js\Starry\Services\kol.flash.service.js" />
+    <Content Include="js\Starry\Services\kol.user.service.js" />
     <Content Include="js\Starry\Services\user.service.js" />
-    <Content Include="js\Starry\Services\user.service.local-storage.js" />
     <TypeScriptCompile Include="companyLogin\app.ts" />
     <Content Include="companyLogin\home.controller.js" />
     <Content Include="companyLogin\index.html" />
@@ -49,6 +51,10 @@
     <Content Include="companyLogin\register.view.html" />
     <Content Include="companyLogin\register.controller.js" />
     <Content Include="kolLogin\index.html" />
+    <Content Include="kolLogin\login.controller.js" />
+    <Content Include="kolLogin\login.view.html" />
+    <Content Include="kolLogin\register.controller.js" />
+    <Content Include="kolLogin\register.view.html" />
     <Content Include="kol\kol-dashboard.html" />
     <Content Include="kol\shared-frame.html" />
     <Content Include="learnMore\index.html" />

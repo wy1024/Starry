@@ -20,6 +20,14 @@ namespace Starry.Lib.Contracts
 
         Task<string> GetCompanyNameByUsername(string username);
 
+        Task<bool> AddNewKolUser(string user_id, string name, string email, string password);
+
+        Task<bool> LoginKolUser(string username, string password);
+
+        Task<bool> GetKolUserByUsername(string username);
+
+        Task<string> GetKolNameByUsername(string username);
+
         Task<bool> AddNewCompanyGoal(ICompanyGoal goal);
     }
 }

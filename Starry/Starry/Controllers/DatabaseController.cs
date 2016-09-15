@@ -42,10 +42,26 @@ namespace Starry.Controllers
         }
 
         [HttpGet]
+        [Route("api/DatabaseApi/GetKolUserByUsername/{username}")]
+        public async Task<JsonResult<bool>> GetKolUserByUsername(string username)
+        {
+            bool userExists = await dbservice.GetKolUserByUsername(username);
+            return Json(userExists);
+        }
+
+        [HttpGet]
         [Route("api/DatabaseApi/GetCompanyNameByUsername/{username}")]
         public async Task<JsonResult<string>> GetCompanyNameByUsername(string username)
         {
             string companyName = await dbservice.GetCompanyNameByUsername(username);
+            return Json(companyName);
+        }
+
+        [HttpGet]
+        [Route("api/DatabaseApi/GetKolNameByUsername/{username}")]
+        public async Task<JsonResult<string>> GetKolNameByUsername(string username)
+        {
+            string companyName = await dbservice.GetKolNameByUsername(username);
             return Json(companyName);
         }
 
@@ -62,10 +78,30 @@ namespace Starry.Controllers
         }
 
         [HttpPost]
+        [Route("api/DatabaseApi/AddNewKolUser")]
+        public async Task<JsonResult<bool>> AddNewKolUser([FromBody]RegisterEntity entity)
+        {
+            var res = await dbservice.AddNewKolUser(entity.username, entity.name, entity.email, entity.password);
+            if (res)
+            {
+                // Send verification email
+            }
+            return Json(res);
+        }
+
+        [HttpPost]
         [Route("api/DatabaseApi/LoginCompanyUser")]
         public async Task<JsonResult<bool>> LoginCompanyUser([FromBody]LoginEntity entity)
         {
             var res = await dbservice.LoginCompanyUser(entity.username, entity.password);
+            return Json(res);
+        }
+
+        [HttpPost]
+        [Route("api/DatabaseApi/LoginKolUser")]
+        public async Task<JsonResult<bool>> LoginKolUser([FromBody]LoginEntity entity)
+        {
+            var res = await dbservice.LoginKolUser(entity.username, entity.password);
             return Json(res);
         }
 
