@@ -42,6 +42,8 @@ Licence URI: http://www.os-templates.com/template-terms
                         </ul>
                     </li>
 
+                    <li><a href="#">成功案例</a></li>
+
                     <li>
                         <a class="drop" href="#">关于我们</a>
                         <ul>
@@ -51,8 +53,6 @@ Licence URI: http://www.os-templates.com/template-terms
                             <li><a href="#">联系我们</a></li>
                         </ul>
                     </li>
-
-                    <li><a href="en/">English</a></li>
                 </ul>
             </nav>
         </header>

@@ -30,9 +30,15 @@
     <Content Include="Content\animate.css" />
     <Content Include="Content\company\company-search.css" />
     <Content Include="Content\select2.min.css" />
+    <Content Include="en\aboutUs\team.html" />
+    <Content Include="en\aboutUs\company-info.html" />
+    <Content Include="en\index.html" />
+    <Content Include="en\join\index.html" />
+    <Content Include="en\learnMore\index.html" />
     <Content Include="img\网红\arrow.gif" />
     <Content Include="img\网红\company1.jpg" />
-    <Content Include="img\网红\learnMoreScreenshot.PNG" />
+    <Content Include="img\网红\learnMoreScreenshot.png" />
+    <Content Include="img\网红\qr.jpg" />
     <Content Include="img\网红\wh1.jpg" />
     <Content Include="img\网红\wh2.jpg" />
     <Content Include="img\网红\wh3.jpg" />

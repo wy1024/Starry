@@ -1,4 +1,3 @@
-//// <reference path="../../scripts/typings/_all.d.ts" />
 var App = angular
     .module('Starry', ['ngRoute', 'ngCookies', 'chart.js']);
 var Starry;
@@ -26,7 +25,6 @@ var Starry;
         })
             .when('/progress', {
             templateUrl: "../kol/kol-progress.html",
-            //templateUrl: "companyViews/company-goal.html",
             controller: "KolProgressController as vm"
         })
             .when("/history", {
@@ -41,13 +39,11 @@ var Starry;
     }
     run.$inject = ['$rootScope', '$location', '$cookieStore', '$http'];
     function run($rootScope, $location, $cookieStore, $http) {
-        // keep user logged in after page refresh
         $rootScope.globals = $cookieStore.get('globals') || {};
         if ($rootScope.globals.currentUser) {
-            $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata; // jshint ignore:line
+            $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.globals.currentUser.authdata;
         }
         $rootScope.$on('$locationChangeStart', function (event, next, current) {
-            // redirect to login page if not logged in and trying to access a restricted page
             var restrictedPage = $.inArray($location.path(), ['/login', '/register']) === -1;
             var loggedIn = $rootScope.globals.currentUser;
             if (restrictedPage && !loggedIn) {
@@ -58,4 +54,3 @@ var Starry;
     App.config(config)
         .run(run);
 })(Starry || (Starry = {}));
-//# sourceMappingURL=app.js.map

@@ -1,4 +1,3 @@
-/// <reference path="../../../scripts/typings/_all.d.ts" />
 var Starry;
 (function (Starry) {
     var CompanySearchDetailsController = (function () {
@@ -13,7 +12,6 @@ var Starry;
         }
         CompanySearchDetailsController.$inject = ['$scope', '$http', '$q'];
         return CompanySearchDetailsController;
-    })();
+    }());
     App.controller("CompanySearchDetailsController", CompanySearchDetailsController);
 })(Starry || (Starry = {}));
-//# sourceMappingURL=company-search-details.js.map
